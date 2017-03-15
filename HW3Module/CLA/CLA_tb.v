@@ -13,8 +13,8 @@ module CLA_tb();
     $dumpfile("wave");
     $dumpvars(0, test);
     //--------------------------------------
-    $display("time\t cin C1 C2 C3 C4 g0 g1 g2 g3 p0 p1 p2 p3 G  P");
-    $monitor("%g\t    %b %b %b %b %b %b %b %b %b %b %b %b %b %b %b",
+    $display("time\t cin 	C1 	C2 	C3 	C4	g0 	g1 	g2 	g3 	p0 	p1 	p2 	p3 	G  	P");
+    $monitor("%g\t    %b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b 	%b",
     $time, cin, C1, C2, C3, C4, g0, g1, g2, g3, p0, p1, p2, p3, G, P);
 
     ///////////////////
