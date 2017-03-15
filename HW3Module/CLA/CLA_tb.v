@@ -38,15 +38,15 @@ module CLA_tb();
     ///////////////////
     //TEST 2
     // Initialize Inputs
-    g0 = 1;
+    g0 = 1; // Least Significant Bit
     g1 = 0;
     g2 = 1;
-    g3 = 1;
+    g3 = 1; // Most Significant Bit
 
-    p0 = 0;
+    p0 = 0; // LSB
     p1 = 1;
     p2 = 0;
-    p3 = 1;
+    p3 = 1; //MSB
 
     cin = 0;
 
