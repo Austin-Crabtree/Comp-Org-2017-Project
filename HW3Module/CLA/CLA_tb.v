@@ -22,18 +22,18 @@ module CLA_tb();
     // Initialize Inputs
     g0 = 1;
     g1 = 0;
-    g2 = 1;
+    g2 = 0;
     g3 = 1;
 
     p0 = 0;
-    p1 = 1;
-    p2 = 0;
+    p1 = 0;
+    p2 = 1;
     p3 = 1;
 
     cin = 0;
 
-    // Wait 100 ns for global reset to finish
-    #100;
+    // Wait 10 ns for global reset to finish
+    #10;
 
     ///////////////////
     //TEST 2
@@ -50,8 +50,8 @@ module CLA_tb();
 
     cin = 0;
 
-    // Wait 100 ns for global reset to finish
-    #100;
+    // Wait 10 ns for global reset to finish
+    #10;
   end
 
   CLA test(g0, p0, g1, p1, g2, p2, g3, p3, cin, C1, C2, C3, C4, G, P);
