@@ -1,5 +1,4 @@
 module CLA_tb();
-//CLA test(g0, p0, g1, p1, g2, p2, g3, p3, cin, C1, C2, C3, C4, G, P);
 
   // Inputs
   reg g0, p0, g1, p1, g2, p2, g3, p3;
@@ -9,25 +8,6 @@ module CLA_tb();
   wire C1, C2, C3, C4;
   wire G, P;
 
-  // Instantiate the Unit Under Test (UUT)
-  CLA_Adder uut (
-    .g0(g0),
-    .p0(p0),
-    .g1(g1),
-    .p1(p1),
-    .g2(g2),
-    .p2(p2),
-    .g3(g3),
-    .p3(p3),
-    .cin(cin),
-    .C1(C1),
-    .C2(C2),
-    .C3(C3),
-    .C4(C4),
-    .G(G),
-    .P(P)
-  );
-
   initial begin
     //This is needed for iverilog and gtkwave
     $dumpfile("wave");
@@ -36,6 +16,25 @@ module CLA_tb();
     $display("time\t cin C1 C2 C3 C4 g0 g1 g2 g3 p0 p1 p2 p3 G  P");
     $monitor("%g\t    %b %b %b %b %b %b %b %b %b %b %b %b %b %b %b",
     $time, cin, C1, C2, C3, C4, g0, g1, g2, g3, p0, p1, p2, p3, G, P);
+
+    // Instantiate the Unit Under Test (UUT)
+    CLA uut (
+      .g0(g0),
+      .p0(p0),
+      .g1(g1),
+      .p1(p1),
+      .g2(g2),
+      .p2(p2),
+      .g3(g3),
+      .p3(p3),
+      .cin(cin),
+      .C1(C1),
+      .C2(C2),
+      .C3(C3),
+      .C4(C4),
+      .G(G),
+      .P(P)
+    );
 
     ///////////////////
     //TEST 1
@@ -73,4 +72,6 @@ module CLA_tb();
     // Wait 100 ns for global reset to finish
     #100;
   end
+
+  CLA test(g0, p0, g1, p1, g2, p2, g3, p3, cin, C1, C2, C3, C4, G, P);
 endmodule
