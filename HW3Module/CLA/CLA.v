@@ -13,4 +13,4 @@
   //super generate and super propagate assignments
   assign G = g3 | (p3 & g2) | (p3 & p2 & g1) | (p3 & p2 & p1 & g0);
   assign P = p3 & p2 & p1 & p0;
-endmodule
+endmodule 
