@@ -23,8 +23,10 @@ OneBitALU alu1bit_1(a[1], b[1], C1, less, op, result[1], g1, p1, set1, cout1);
 OneBitALU alu1bit_2(a[2], b[2], C2, less, op, result[2], g2, p2, set2, cout2);
 OneBitALU alu1bit_3(a[3], b[3], C3, less, op, result[3], g3, p3, set3, cout3);
 
+assign set = result[3];
+
 CLA cla(g0, p0, g1, p1, g2, p2, g3, p3, op[2], C1, C2, C3, cout, G, P);
 
-overflowdetect ovrflw(cin, cout, v); //we might need to change the parameters (diagram has 3 inputs, one output)
+overflowdetect ovrflw(C3, cout, overflow);
 
 endmodule

@@ -41,7 +41,7 @@ module OneBitALU_tb();
     #10;
 
     ///////////////////
-    //TEST 2
+    //TEST 3
     // Initialize Inputs
     a = 1;
     b = 1;
