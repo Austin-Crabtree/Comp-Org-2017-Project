@@ -1,0 +1,33 @@
+$date
+	Thu Mar 16 12:18:16 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module overflowtestbench $end
+$scope module test $end
+$var wire 1 ! cin $end
+$var wire 1 " cout $end
+$var wire 1 # v $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+1"
+1!
+$end
+#10
+0"
+0!
+#20
+1#
+1"
+#30
+0"
+1!
+#40
