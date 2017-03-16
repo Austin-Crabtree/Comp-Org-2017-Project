@@ -1,5 +1,9 @@
 $date
+<<<<<<< Updated upstream
 	Wed Mar 15 20:15:07 2017
+=======
+	Wed Mar 15 20:17:10 2017
+>>>>>>> Stashed changes
 $end
 $version
 	Icarus Verilog
@@ -44,8 +48,13 @@ $dumpvars
 0,
 1+
 0*
+<<<<<<< Updated upstream
 0)
 0(
+=======
+1)
+1(
+>>>>>>> Stashed changes
 1'
 b1 &
 1%
@@ -55,6 +64,11 @@ b1 &
 1!
 $end
 #10
+<<<<<<< Updated upstream
+=======
+1)
+1(
+>>>>>>> Stashed changes
 0$
 1,
 0+
