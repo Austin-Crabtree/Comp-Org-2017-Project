@@ -17,6 +17,6 @@ module OneBitALU(a, b, cin, less, op, result, g, p, set);
   assign g = a & bmux;
   assign set = (~a & ~bmux & cin) + (~a & bmux & ~cin) + (~a & ~bmux & ~cin) + (a & bmux & cin);
 
-  mux4to1 resultmux4to1(g, p, set, less, op[0], op[1], result);
+  mux4to1 resultmux4to1(g, p, set, less, op[1], op[0], result);
 
 endmodule

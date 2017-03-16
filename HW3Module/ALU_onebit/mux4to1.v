@@ -1,4 +1,4 @@
-module mux4to1(a, b, c, d, s0, s1, out);
+module mux4to1(a, b, c, d, s1, s0, out);
   input a, b, c, d, s0, s1;
   output out;
 

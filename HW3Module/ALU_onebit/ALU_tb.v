@@ -23,7 +23,7 @@ module OneBitALU_tb();
     b = 0;
     cin = 0;
     less = 1;
-    op = 3'b100;
+    op = 3'b001;
 
     // Wait 10 ns for global reset to finish
     #10;
