@@ -12,8 +12,8 @@ module OneBitALU_tb();
     $dumpfile("wave");
     $dumpvars(0, test);
     //--------------------------------------
-    $display("time\t a\tb\tcin\tless\top\tresult\tg\tp\tset");
-    $monitor("%g\t    %b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b",
+    $display("time\ta\tb\tcin\tless\top\tresult\tg\tp\tset");
+    $monitor("%g\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b",
     $time, a, b, cin, less, op, result, g, p, set);
 
     ///////////////////
