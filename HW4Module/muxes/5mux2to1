@@ -1,0 +1,7 @@
+module mux2to1(a, b, op, result);
+  input [4:0] a, b
+  input op;
+  output [4:0] result;
+
+  assign result = (~op & a) + (op & b);
+endmodule
