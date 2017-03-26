@@ -1,0 +1,47 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-462-gfbd69e1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7ffec0406220 .scope module, "extension_tb" "extension_tb" 2 1;
+ .timescale 0 0;
+v0x7ffec0416610_0 .var "a", 15 0;
+v0x7ffec04166d0_0 .net "result", 31 0, v0x7ffec0416550_0;  1 drivers
+S_0x7ffec0406390 .scope module, "test" "SignExtension" 2 31, 3 1 0, S_0x7ffec0406220;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a"
+    .port_info 1 /OUTPUT 32 "result"
+v0x7ffec0406500_0 .net "a", 15 0, v0x7ffec0416610_0;  1 drivers
+v0x7ffec0416550_0 .var "result", 31 0;
+E_0x7ffec04046c0 .event edge, v0x7ffec0406500_0;
+    .scope S_0x7ffec0406390;
+T_0 ;
+    %wait E_0x7ffec04046c0;
+    %load/vec4 v0x7ffec0406500_0;
+    %pad/s 32;
+    %assign/vec4 v0x7ffec0416550_0, 0;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x7ffec0406220;
+T_1 ;
+    %vpi_call 2 10 "$dumpfile", "wave" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7ffec0406390 {0 0 0};
+    %vpi_call 2 13 "$display", "time\011a\011\011\011result" {0 0 0};
+    %vpi_call 2 14 "$monitor", "%g\011%b\011%b", $time, v0x7ffec0416610_0, v0x7ffec04166d0_0 {0 0 0};
+    %pushi/vec4 477, 0, 16;
+    %store/vec4 v0x7ffec0416610_0, 0, 16;
+    %delay 10, 0;
+    %pushi/vec4 45022, 0, 16;
+    %store/vec4 v0x7ffec0416610_0, 0, 16;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "extension_tb.v";
+    "16to32bit_extension.v";

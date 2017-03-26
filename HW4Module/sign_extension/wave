@@ -1,0 +1,24 @@
+$date
+	Sun Mar 26 19:52:47 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module extension_tb $end
+$scope module test $end
+$var wire 16 ! a [15:0] $end
+$var reg 32 " result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111011101 "
+b111011101 !
+$end
+#10
+b11111111111111111010111111011110 "
+b1010111111011110 !
