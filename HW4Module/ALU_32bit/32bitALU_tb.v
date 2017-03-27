@@ -28,6 +28,8 @@ module thirtytwoBitALUTest();
     a = 32'b00000000000000000000000001000011;
     b = 32'b10000000000000000000000001111111;
     op = 2'b00;
+
+    #10;
   end
 
   thirtytwoBitALU test(a, b, op, result, set, zero, overflow);
