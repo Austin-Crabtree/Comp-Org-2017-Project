@@ -1,4 +1,4 @@
-module 32BitALU(a, b, op, result, set, zero, overflow);
+module thirtytwoBitALU(a, b, op, result, set, zero, overflow);
   input [31:0] a, b;
   input [2:0] op;
   output [31:0] result;

@@ -1,4 +1,4 @@
-module Mux32Bit2To1_tb();
+module Mux32Bit2To1_tb(); 
 
   // Inputs
   reg [31:0] a, b;
