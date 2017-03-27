@@ -1,4 +1,4 @@
-module 16BitALU(a, b, cin, less, op, result, cout, set, zero, G, P, overflow);
+module sixteenBitALU(a, b, cin, less, op, result, cout, set, zero, G, P, overflow);
   input [15:0] a, b;
   input cin, less;
   input [2:0] op;
