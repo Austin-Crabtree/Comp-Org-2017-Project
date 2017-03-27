@@ -30,9 +30,10 @@ CLA cla(g0, p0, g1, p1, g2, p2, g3, p3, op[2], C1, C2, C3, cout, G, P);
 
 overflowdetect ovrflw(C3, cout, overflow);
 
-always@(result)
-	begin
-		assign zero = ~(result[0] | result[1] | result[2] | result[3]);
-	end
+// always@(result)
+// 	begin
+// 		assign zero = ~(result[0] | result[1] | result[2] | result[3]);
+// 	end
+assign zero = ~(result[0] | result[1] | result[2] | result[3]);
 
 endmodule
