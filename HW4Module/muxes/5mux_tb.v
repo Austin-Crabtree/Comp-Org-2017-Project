@@ -1,4 +1,4 @@
-module Mux5Bit2to1test(a, b, op, result);
+module Mux5Bit2to1test();
 	//Inputs
 	reg [4:0] a, b;
 	reg op;
@@ -11,7 +11,7 @@ module Mux5Bit2to1test(a, b, op, result);
 		$dumpvars(0, test);
 
 		$display("time\ta\tb\top\tresult");
-		$monitor("%g\t%b\t%b\t%b\t%b", 
+		$monitor("%g\t%b\t%b\t%b\t%b",
 		$time, a, b, op, result);
 
 		///////////////////
@@ -31,6 +31,6 @@ module Mux5Bit2to1test(a, b, op, result);
 		b = 5'b11111;
 		op = 1;
 	end
-	
+
 	Mux5Bit2To1 test(a, b, op, result);
 endmodule
