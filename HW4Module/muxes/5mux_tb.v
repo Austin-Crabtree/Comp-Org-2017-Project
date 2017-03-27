@@ -30,6 +30,8 @@ module Mux5Bit2to1test();
 		a = 5'b10011;
 		b = 5'b11111;
 		op = 1;
+		
+		#10;
 	end
 
 	Mux5Bit2To1 test(a, b, op, result);

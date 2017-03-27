@@ -26,6 +26,8 @@ module extension_tb();
     //TEST 2
     // Initialize Inputs
     a = 16'b1010111111011110;
+    
+    #10;
   end
 
   SignExtension test(a, result);
