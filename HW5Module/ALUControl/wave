@@ -1,0 +1,33 @@
+$date
+	Mon Apr  3 20:23:58 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ALUControl_Test_Bench $end
+$scope module test $end
+$var wire 2 ! ALUOp [1:0] $end
+$var wire 6 " Funct [5:0] $end
+$var wire 3 # ALUControl [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 #
+b100101 "
+b0 !
+$end
+#10
+b110 #
+b1 !
+#20
+b1 #
+b10 !
+#30
+b101 #
+b11 !
+#40
