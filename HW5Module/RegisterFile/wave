@@ -1,0 +1,50 @@
+$date
+	Tue Apr  4 17:43:26 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Mux5Bit2to1test $end
+$scope module test $end
+$var wire 1 ! Clk $end
+$var wire 32 " ReadData1 [31:0] $end
+$var wire 32 # ReadData2 [31:0] $end
+$var wire 5 $ ReadRegister1 [4:0] $end
+$var wire 5 % ReadRegister2 [4:0] $end
+$var wire 1 & RegWrite $end
+$var wire 32 ' WriteData [31:0] $end
+$var wire 5 ( WriteRegister [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11010 (
+b10000000000000000000000001111111 '
+1&
+b11010 %
+b10011 $
+b10000000000000000000000001111111 #
+bx "
+1!
+$end
+#10
+0!
+#20
+1!
+0&
+b10011 (
+#30
+0!
+#40
+b11011000001111110000000000111111 "
+1!
+1&
+b11011000001111110000000000111111 '
+#50
+0!
+#60
+1!
