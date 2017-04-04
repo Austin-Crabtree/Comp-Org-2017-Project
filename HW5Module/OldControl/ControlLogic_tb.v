@@ -6,14 +6,14 @@ module OldControlLogic_Test_Bench();
 	wire ALUsrc,RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite;
 	wire [1:0] ALUOp;
 
-	initial begin
+	initial begin 
 	  //This is needed for iverilog and gtkwave
 	  $dumpfile("wave");
 	  $dumpvars(0, test);
 
 	  //---------------------------------------
 	  $display("time\topcode\tALUsrc\tALUop\tRegDst\tMemWrite\tMemRead\tBeq\tBne\tJump\tMemToRead\tRegWrite");
-	  $monitor("%g\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b",
+	  $monitor("%g\t%b\t%b\t%b\t%b\t%b\t\t%b\t%b\t%b\t%b\t%b\t\t%b",
 	  $time, opcode, ALUsrc, ALUop, RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite);
 
 	  /////////////////////////////////////////

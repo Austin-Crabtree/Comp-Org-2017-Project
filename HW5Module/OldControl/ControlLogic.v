@@ -14,24 +14,24 @@ module OldControlLogic (opcode, ALUsrc, ALUop, RegDst, MemWrite, MemRead, Beq, B
 
 	always@(opcode)
 	begin
-	   RFormat <= (~opcode[0] & ~opcode[1] & ~opcode[2] & ~opcode[3] & ~opcode[4] & ~opcode[5]);
-	   lw <= (opcode[0] & ~opcode[1] & ~opcode[2] & ~opcode[3] & opcode[4] & opcode[5]);
-	   sw <= (opcode[0] & ~opcode[1] & opcode[2] & ~opcode[3] & opcode[4] & opcode[5]);
-	   beq <= (~opcode[0] & ~opcode[1] & ~opcode[2] & opcode[3] & ~opcode[4] & ~opcode[5]);
-	   bne <= (opcode[0] & opcode[1] & opcode[2] & ~opcode[3] & opcode[4] & opcode[5]);
-	   jmp <= (opcode[0] & ~opcode[1] & ~opcode[2] & ~opcode[3] & ~opcode[4] & opcode[5]);
+	   RFormat = (~opcode[5] & ~opcode[4] & ~opcode[3] & ~opcode[2] & ~opcode[1] & ~opcode[0]);
+	   lw = (opcode[5] & ~opcode[4] & ~opcode[3] & ~opcode[2] & opcode[1] & opcode[0]);
+	   sw = (opcode[5] & ~opcode[4] & opcode[3] & ~opcode[2] & opcode[1] & opcode[0]);
+	   beq = (~opcode[5] & ~opcode[4] & ~opcode[3] & opcode[2] & ~opcode[1] & ~opcode[0]);
+	   bne = (opcode[5] & opcode[4] & opcode[3] & ~opcode[2] & opcode[1] & opcode[0]);
+	   jmp = (opcode[5] & ~opcode[4] & ~opcode[3] & ~opcode[2] & ~opcode[1] & opcode[0]);
 
-	   ALUsrc <= (lw | sw);
-	   RegDst <= RFormat;
-	   MemWrite <= sw; 
-	   MemRead <= lw;
-	   Beq <= beq;
-	   Bne <= bne;
-	   Jump <= jmp;
-	   MemToReg <= lw;
-	   RegWrite <= (RFormat | lw);
-	   ALUop[0] <= (bne | beq | jmp);
-	   ALUop[1] <= (RFormat | jmp);
+	   ALUsrc = (lw | sw);
+	   RegDst = RFormat;
+	   MemWrite = sw; 
+	   MemRead = lw;
+	   Beq = beq;
+	   Bne = bne;
+	   Jump = jmp;
+	   MemToReg = lw;
+	   RegWrite = (RFormat | lw);
+	   ALUop[0] = (bne | beq | jmp);
+	   ALUop[1] = (RFormat | jmp);
 	end
 
 endmodule
