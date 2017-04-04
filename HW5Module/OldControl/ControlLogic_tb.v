@@ -1,9 +1,9 @@
-module OldControlLogic_Test_Bench ();
+module OldControlLogic_Test_Bench();
 	//Input
-	input [5:0] opcode;
+	reg [5:0] opcode;
 
 	//Output
-	wire ALUsrc,RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite; 
+	wire ALUsrc,RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite;
 	wire [1:0] ALUOp;
 
 	initial begin
@@ -13,7 +13,7 @@ module OldControlLogic_Test_Bench ();
 
 	  //---------------------------------------
 	  $display("time\topcode\tALUsrc\tALUop\tRegDst\tMemWrite\tMemRead\tBeq\tBne\tJump\tMemToRead\tRegWrite");
-	  $monitor("%g\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b", 
+	  $monitor("%g\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b\t%b",
 	  $time, opcode, ALUsrc, ALUop, RegDst, MemWrite, MemRead, Beq, Bne, Jump, MemToReg, RegWrite);
 
 	  /////////////////////////////////////////

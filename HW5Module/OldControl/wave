@@ -1,0 +1,77 @@
+$date
+	Tue Apr  4 18:17:37 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module OldControlLogic_Test_Bench $end
+$scope module test $end
+$var wire 6 ! opcode [5:0] $end
+$var reg 2 " ALUop [1:0] $end
+$var reg 1 # ALUsrc $end
+$var reg 1 $ Beq $end
+$var reg 1 % Bne $end
+$var reg 1 & Jump $end
+$var reg 1 ' MemRead $end
+$var reg 1 ( MemToReg $end
+$var reg 1 ) MemWrite $end
+$var reg 1 * RFormat $end
+$var reg 1 + RegDst $end
+$var reg 1 , RegWrite $end
+$var reg 1 - beq $end
+$var reg 1 . bne $end
+$var reg 1 / jmp $end
+$var reg 1 0 lw $end
+$var reg 1 1 sw $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+01
+00
+0/
+0.
+0-
+x,
+x+
+1*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+bx "
+b0 !
+$end
+#10
+b10 "
+1,
+0(
+0&
+0%
+0$
+0'
+0)
+1+
+0#
+0*
+b100011 !
+#20
+b0 "
+0,
+0+
+b101011 !
+#30
+b100 !
+#40
+b111011 !
+#50
+1/
+b100001 !
+#60
