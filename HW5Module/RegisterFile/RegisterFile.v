@@ -6,7 +6,7 @@ module RegisterFile(ReadRegister1, ReadRegister2, WriteRegister, WriteData,RegWr
   input Clk;
   output [31:0] ReadData1, ReadData2;
 
-  reg [31:0] RegFile[0:16];
+  reg [31:0] RegFile[0:31];
 
   assign ReadData1 = RegFile[ReadRegister1];
   assign ReadData2 = RegFile[ReadRegister2];
