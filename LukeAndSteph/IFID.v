@@ -11,7 +11,7 @@ module IFID(flush,clock,IFIDWrite,PC_Plus4,Inst,InstReg,PC_Plus4Reg);
     begin
         if(flush)
         begin
-InstReg <= 0;
+           InstReg <= 0;
            PC_Plus4Reg <=0;
         end
         else if(IFIDWrite)
