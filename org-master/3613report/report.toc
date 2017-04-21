@@ -1,0 +1,66 @@
+\contentsline {title}{MIPS in Verilog}{1}{chapter.1}
+\authcount {1}
+\contentsline {author}{Nathan St. Amour \& Colt Kiser}{1}{chapter.1}
+\contentsline {section}{\numberline {1}Introduction and MIPS Design}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1}MIPS}{4}{subsection.1.1.1}
+\contentsline {section}{\numberline {2}Design Methodology}{4}{section.1.2}
+\contentsline {subsection}{\numberline {2.1}Mips Data Storage}{4}{subsection.1.2.1}
+\contentsline {section}{\numberline {3}Instruction Set}{4}{section.1.3}
+\contentsline {section}{\numberline {4}Processor Purpose/Functions}{5}{section.1.4}
+\contentsline {subsection}{\numberline {4.1}Modules}{5}{subsection.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}MIPS}{5}{subsubsection.1.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}IF}{5}{subsubsection.1.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}ID}{5}{subsubsection.1.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}EX}{5}{subsubsection.1.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}MEM}{6}{subsubsection.1.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}WB}{6}{subsubsection.1.4.1.6}
+\contentsline {subsubsection}{\numberline {4.1.7}Data memory}{6}{subsubsection.1.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.8}Instruction Memory}{6}{subsubsection.1.4.1.8}
+\contentsline {subsubsection}{\numberline {4.1.9}ALU}{6}{subsubsection.1.4.1.9}
+\contentsline {paragraph}{\numberline {4.1.9.1}16 Bit ALU}{7}{paragraph.1.4.1.9.1}
+\contentsline {paragraph}{\numberline {4.1.9.2}4 Bit ALU}{7}{paragraph.1.4.1.9.2}
+\contentsline {subsubsection}{\numberline {4.1.10}CLA}{7}{subsubsection.1.4.1.10}
+\contentsline {subsubsection}{\numberline {4.1.11}1 Bit ALU}{7}{subsubsection.1.4.1.11}
+\contentsline {section}{\numberline {5}Conclusion}{7}{section.1.5}
+\contentsline {section}{\numberline {6}Appendex}{8}{section.1.6}
+\contentsline {subsection}{\numberline {6.1}MIPS}{8}{subsection.1.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}TB/WF}{9}{subsubsection.1.6.1.1}
+\contentsline {subsection}{\numberline {6.2}IF}{11}{subsection.1.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}WF/TB}{11}{subsubsection.1.6.2.1}
+\contentsline {subsection}{\numberline {6.3}ID}{12}{subsection.1.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}WF/TB}{12}{subsubsection.1.6.3.1}
+\contentsline {subsection}{\numberline {6.4}EX}{14}{subsection.1.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}TB/WF}{14}{subsubsection.1.6.4.1}
+\contentsline {subsection}{\numberline {6.5}MEM}{16}{subsection.1.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}WF/TB}{16}{subsubsection.1.6.5.1}
+\contentsline {subsection}{\numberline {6.6}WB}{18}{subsection.1.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}WF/TB}{18}{subsubsection.1.6.6.1}
+\contentsline {subsection}{\numberline {6.7}Data Memory}{19}{subsection.1.6.7}
+\contentsline {subsubsection}{\numberline {6.7.1}TB/WF}{20}{subsubsection.1.6.7.1}
+\contentsline {subsection}{\numberline {6.8}Instruction Memory}{21}{subsection.1.6.8}
+\contentsline {subsubsection}{\numberline {6.8.1} TB/WF}{22}{subsubsection.1.6.8.1}
+\contentsline {subsection}{\numberline {6.9}Control}{22}{subsection.1.6.9}
+\contentsline {subsubsection}{\numberline {6.9.1}TB/WF}{23}{subsubsection.1.6.9.1}
+\contentsline {subsection}{\numberline {6.10}Control Old}{25}{subsection.1.6.10}
+\contentsline {subsubsection}{\numberline {6.10.1}TB/WF}{25}{subsubsection.1.6.10.1}
+\contentsline {subsection}{\numberline {6.11}Register File}{27}{subsection.1.6.11}
+\contentsline {subsubsection}{\numberline {6.11.1}TB/WF}{27}{subsubsection.1.6.11.1}
+\contentsline {subsection}{\numberline {6.12}ALU Op to Control}{29}{subsection.1.6.12}
+\contentsline {subsection}{\numberline {6.13}32 Bit ALU}{31}{subsection.1.6.13}
+\contentsline {subsubsection}{\numberline {6.13.1} TB/WV}{32}{subsubsection.1.6.13.1}
+\contentsline {subsection}{\numberline {6.14}16 Bit ALU}{32}{subsection.1.6.14}
+\contentsline {subsubsection}{\numberline {6.14.1}TB/WF}{33}{subsubsection.1.6.14.1}
+\contentsline {subsection}{\numberline {6.15}4 Bit ALU}{34}{subsection.1.6.15}
+\contentsline {subsubsection}{\numberline {6.15.1}TB/WF}{35}{subsubsection.1.6.15.1}
+\contentsline {subsection}{\numberline {6.16}CLA}{36}{subsection.1.6.16}
+\contentsline {subsubsection}{\numberline {6.16.1}TB/WF}{37}{subsubsection.1.6.16.1}
+\contentsline {subsection}{\numberline {6.17}1 Bit ALU}{39}{subsection.1.6.17}
+\contentsline {subsubsection}{\numberline {6.17.1} TB/WF}{40}{subsubsection.1.6.17.1}
+\contentsline {subsection}{\numberline {6.18}Overflow}{42}{subsection.1.6.18}
+\contentsline {subsubsection}{\numberline {6.18.1} TB/WB}{43}{subsubsection.1.6.18.1}
+\contentsline {subsection}{\numberline {6.19}Sign Extension}{43}{subsection.1.6.19}
+\contentsline {subsubsection}{\numberline {6.19.1}TB/WF}{44}{subsubsection.1.6.19.1}
+\contentsline {subsection}{\numberline {6.20}Mux 32 bit 2 to 1}{44}{subsection.1.6.20}
+\contentsline {subsubsection}{\numberline {6.20.1}TB/WF}{45}{subsubsection.1.6.20.1}
+\contentsline {subsection}{\numberline {6.21}Mux 5 Bit 2 to 1}{46}{subsection.1.6.21}
+\contentsline {subsection}{\numberline {6.22}Forarding}{47}{subsection.1.6.22}
