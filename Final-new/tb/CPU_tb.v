@@ -1,6 +1,4 @@
-`timescale 1ns / 1ps
-
-module MIPSProcessorb();
+module CPU_tb();
 reg Clk;
 wire [31:0] Out_DataB;
 wire [31:0] Out_SE;
