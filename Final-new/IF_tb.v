@@ -20,7 +20,6 @@ module IF_tb();
     //TEST 1
     // Initialize regs
     PC = 32'd 1;
-    Clk = 1'b0;
 
     // Wait 20 s for global reset to finish
     #20;

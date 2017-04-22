@@ -1,5 +1,5 @@
 $date
-	Sat Apr 22 15:56:55 2017
+	Sat Apr 22 16:09:49 2017
 $end
 $version
 	Icarus Verilog
@@ -7,39 +7,65 @@ $end
 $timescale
 	1s
 $end
-$scope module IF_tb $end
+$scope module MEMb $end
 $scope module test $end
-$var wire 1 ! Clk $end
-$var wire 32 " PC [31:0] $end
-$var wire 32 # OutPC [31:0] $end
-$var wire 32 $ Instr [31:0] $end
-$scope module IM $end
-$var wire 1 % Clk $end
-$var wire 32 & PC [31:0] $end
-$var reg 32 ' Instr [31:0] $end
+$var wire 32 ! Address [31:0] $end
+$var wire 1 " Clk $end
+$var wire 32 # Data [31:0] $end
+$var wire 2 $ MEMControl [1:0] $end
+$var wire 2 % WBControl [1:0] $end
+$var wire 32 & DataTemp [31:0] $end
+$var wire 7 ' AddressTemp [6:0] $end
+$var reg 32 ( AddressOut [31:0] $end
+$var reg 32 ) DataOut [31:0] $end
+$var reg 2 * WBControlOut [1:0] $end
+$scope module DMEM $end
+$var wire 7 + Address [6:0] $end
+$var wire 1 " Clk $end
+$var wire 1 , MemRead $end
+$var wire 1 - MemWrite $end
+$var wire 32 . WriteData [31:0] $end
+$var reg 32 / ReadData [31:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-bx '
-b0 &
-1%
-bx $
-b10 #
-b1 "
-0!
+bx /
+b1000 .
+0-
+1,
+b10 +
+bx *
+bx )
+bx (
+b10 '
+bx &
+b0 %
+b10 $
+b1000 #
+1"
+b10 !
 $end
 #10
-b1 &
-1!
+b0 *
+b10 (
+0"
 #20
-b0 &
-0!
+b1000 '
+b1000 +
+0,
+1-
+1"
+b1000 !
+b1 $
 #30
-b1 &
-1!
+b1000 (
+0"
 #40
-b0 &
-0!
+1"
+#50
+0"
+#60
+1"
