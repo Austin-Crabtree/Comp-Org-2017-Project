@@ -6,10 +6,8 @@ module DataMemory(Address, WriteData, MemRead, MemWrite, Clk, ReadData);
   input Clk;
   output reg [31:0] ReadData; // Value read from memory location Address
 
-// Address size for MEM arr needs to change?
-///////////////////////////////////////////
-  reg [31:0] MEM[0:127];  // 128 words of 32-bit memory
-///////////////////////////////////////////
+
+  reg [31:0] MEM[0:127];
 
   always @(posedge Clk) begin
     if (MemWrite == 1'b1) begin

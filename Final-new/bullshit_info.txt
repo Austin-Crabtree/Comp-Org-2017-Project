@@ -2,7 +2,18 @@ Missing/Strange Things:
   No Hazard Unit
   Forward Module exists, but is never called
 ToDo:
-  Change Instruction Memory data
-  Spot Check for visual changes between projects
-  Check the old report to see wording on issues encountered/ect.
+  Change Instruction Memory data (Done)
+  Spot Check for visual changes between projects (Done)
+  Check the old report to see wording on issues encountered/ect. (Done)
+  Test Benches (Need help I just can't seem to be able to get them at all)
+
+
+ToDo(Updated after late night stint):
   Test Benches
+  Generate Waveforms
+  Add both of the above to the report
+  
+  After these are done we are good to go for this project 
+
+  Yeah Jacob I got everything else done on this list besides the test benches I just couldnt seem to get them
+  work could you take a look and see if you can get one to run then I help ya with the rest. 
