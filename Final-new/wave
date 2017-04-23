@@ -1,5 +1,5 @@
 $date
-	Sat Apr 22 16:19:23 2017
+	Sat Apr 22 23:10:32 2017
 $end
 $version
 	Icarus Verilog
@@ -7,26 +7,5068 @@ $end
 $timescale
 	1s
 $end
+$scope module CPU_tb $end
+$scope module test $end
+$var wire 32 ! ALUResult [31:0] $end
+$var wire 32 " BranchPC [31:0] $end
+$var wire 1 # Clk $end
+$var wire 32 $ Data [31:0] $end
+$var wire 32 % Instr [31:0] $end
+$var wire 32 & MEMAddress [31:0] $end
+$var wire 5 ' WriteAddr [4:0] $end
+$var wire 2 ( WBControl3 [1:0] $end
+$var wire 2 ) WBControl2 [1:0] $end
+$var wire 2 * WBControl1 [1:0] $end
+$var wire 32 + SE [31:0] $end
+$var wire 5 , Rt [4:0] $end
+$var wire 5 - Rs [4:0] $end
+$var wire 1 . RegWrite $end
+$var wire 5 / Rd [4:0] $end
+$var wire 1 0 PCSrc $end
+$var wire 32 1 OutPC [31:0] $end
+$var wire 32 2 MEMData [31:0] $end
+$var wire 2 3 MEMControl2 [1:0] $end
+$var wire 2 4 MEMControl1 [1:0] $end
+$var wire 32 5 JumpPC [31:0] $end
+$var wire 1 6 Jump $end
+$var wire 3 7 Funct [2:0] $end
+$var wire 4 8 EXControl1 [3:0] $end
+$var wire 32 9 DataB [31:0] $end
+$var wire 32 : DataA [31:0] $end
+$var wire 32 ; ALUData [31:0] $end
+$var reg 32 < PC [31:0] $end
+$scope module EX_ $end
+$var wire 1 = Clk $end
+$var wire 32 > DataAIn [31:0] $end
+$var wire 32 ? DataBIn [31:0] $end
+$var wire 4 @ EXControlIn [3:0] $end
+$var wire 3 A FunctIn [2:0] $end
+$var wire 2 B MEMControlIn [1:0] $end
+$var wire 5 C RdIn [4:0] $end
+$var wire 5 D RtIn [4:0] $end
+$var wire 32 E SEIn [31:0] $end
+$var wire 2 F WBControlIn [1:0] $end
+$var wire 1 G zero $end
+$var wire 1 H set $end
+$var wire 32 I result [31:0] $end
+$var wire 1 J overflow $end
+$var reg 32 K DataB [31:0] $end
+$var reg 32 L DataOut [31:0] $end
+$var reg 2 M MEMControlOut [1:0] $end
+$var reg 5 N RdOut [4:0] $end
+$var reg 32 O ResultOut [31:0] $end
+$var reg 2 P WBControlOut [1:0] $end
+$scope module ALU $end
+$var wire 32 Q a [31:0] $end
+$var wire 32 R b [31:0] $end
+$var wire 1 S null_wire $end
+$var wire 3 T op [2:0] $end
+$var wire 1 J overflow $end
+$var wire 1 U overflow0 $end
+$var wire 1 V overflow1 $end
+$var wire 1 H set $end
+$var wire 1 G zero $end
+$var wire 1 W zero1 $end
+$var wire 1 X zero0 $end
+$var wire 1 Y setwire $end
+$var wire 32 Z result [31:0] $end
+$var wire 1 [ cin1 $end
+$scope module alu0 $end
+$var wire 1 S G $end
+$var wire 1 S P $end
+$var wire 16 \ a [15:0] $end
+$var wire 16 ] b [15:0] $end
+$var wire 1 ^ cin $end
+$var wire 1 _ null_cout $end
+$var wire 1 ` null_set $end
+$var wire 3 a op [2:0] $end
+$var wire 1 U overflow $end
+$var wire 1 S set $end
+$var wire 1 X zero $end
+$var wire 4 b zeros [3:0] $end
+$var wire 16 c result [15:0] $end
+$var wire 1 d p3 $end
+$var wire 1 e p2 $end
+$var wire 1 f p1 $end
+$var wire 1 g p0 $end
+$var wire 1 Y less $end
+$var wire 1 h g3 $end
+$var wire 1 i g2 $end
+$var wire 1 j g1 $end
+$var wire 1 k g0 $end
+$var wire 1 [ cout $end
+$var wire 1 l C3 $end
+$var wire 1 m C2 $end
+$var wire 1 n C1 $end
+$scope module CLA1 $end
+$var wire 1 n C1 $end
+$var wire 1 m C2 $end
+$var wire 1 l C3 $end
+$var wire 1 [ C4 $end
+$var wire 1 S G $end
+$var wire 1 S P $end
+$var wire 1 ^ cin $end
+$var wire 1 d p3 $end
+$var wire 1 e p2 $end
+$var wire 1 f p1 $end
+$var wire 1 g p0 $end
+$var wire 1 h g3 $end
+$var wire 1 i g2 $end
+$var wire 1 j g1 $end
+$var wire 1 k g0 $end
+$upscope $end
+$scope module alu_0 $end
+$var wire 4 o a [3:0] $end
+$var wire 4 p b [3:0] $end
+$var wire 1 ^ cin $end
+$var wire 1 _ cout $end
+$var wire 3 q op [2:0] $end
+$var wire 1 U overflow $end
+$var wire 1 ` set $end
+$var wire 1 r zero $end
+$var wire 1 s set3 $end
+$var wire 1 t set2 $end
+$var wire 1 u set1 $end
+$var wire 1 v set0 $end
+$var wire 4 w result [3:0] $end
+$var wire 1 x p3 $end
+$var wire 1 y p2 $end
+$var wire 1 z p1 $end
+$var wire 1 { p0 $end
+$var wire 1 Y less $end
+$var wire 1 | g3 $end
+$var wire 1 } g2 $end
+$var wire 1 ~ g1 $end
+$var wire 1 !" g0 $end
+$var wire 1 "" cout3 $end
+$var wire 1 #" cout2 $end
+$var wire 1 $" cout1 $end
+$var wire 1 %" cout0 $end
+$var wire 1 g P $end
+$var wire 1 k G $end
+$var wire 1 &" C3 $end
+$var wire 1 '" C2 $end
+$var wire 1 (" C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 )" a $end
+$var wire 1 *" b $end
+$var wire 1 ^ cin $end
+$var wire 1 !" g $end
+$var wire 3 +" op [2:0] $end
+$var wire 1 { p $end
+$var wire 1 v set $end
+$var wire 1 ," result $end
+$var wire 1 Y less $end
+$var wire 1 %" cout $end
+$var wire 1 -" bmux $end
+$scope module bmux2to1 $end
+$var wire 1 *" a $end
+$var wire 1 ." b $end
+$var wire 1 /" s $end
+$var wire 1 -" out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 !" a $end
+$var wire 1 { b $end
+$var wire 1 0" s0 $end
+$var wire 1 1" s1 $end
+$var wire 1 ," out $end
+$var wire 1 Y d $end
+$var wire 1 v c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 )" a $end
+$var wire 1 -" b $end
+$var wire 1 ^ cin $end
+$var wire 1 %" cout $end
+$var wire 1 v sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 2" a $end
+$var wire 1 3" b $end
+$var wire 1 ~ g $end
+$var wire 1 4" less $end
+$var wire 3 5" op [2:0] $end
+$var wire 1 z p $end
+$var wire 1 u set $end
+$var wire 1 6" result $end
+$var wire 1 $" cout $end
+$var wire 1 (" cin $end
+$var wire 1 7" bmux $end
+$scope module bmux2to1 $end
+$var wire 1 3" a $end
+$var wire 1 8" b $end
+$var wire 1 9" s $end
+$var wire 1 7" out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ~ a $end
+$var wire 1 z b $end
+$var wire 1 4" d $end
+$var wire 1 :" s0 $end
+$var wire 1 ;" s1 $end
+$var wire 1 6" out $end
+$var wire 1 u c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 2" a $end
+$var wire 1 7" b $end
+$var wire 1 $" cout $end
+$var wire 1 u sum $end
+$var wire 1 (" cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 <" a $end
+$var wire 1 =" b $end
+$var wire 1 } g $end
+$var wire 1 >" less $end
+$var wire 3 ?" op [2:0] $end
+$var wire 1 y p $end
+$var wire 1 t set $end
+$var wire 1 @" result $end
+$var wire 1 #" cout $end
+$var wire 1 '" cin $end
+$var wire 1 A" bmux $end
+$scope module bmux2to1 $end
+$var wire 1 =" a $end
+$var wire 1 B" b $end
+$var wire 1 C" s $end
+$var wire 1 A" out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 } a $end
+$var wire 1 y b $end
+$var wire 1 >" d $end
+$var wire 1 D" s0 $end
+$var wire 1 E" s1 $end
+$var wire 1 @" out $end
+$var wire 1 t c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 <" a $end
+$var wire 1 A" b $end
+$var wire 1 #" cout $end
+$var wire 1 t sum $end
+$var wire 1 '" cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 F" a $end
+$var wire 1 G" b $end
+$var wire 1 | g $end
+$var wire 1 H" less $end
+$var wire 3 I" op [2:0] $end
+$var wire 1 x p $end
+$var wire 1 s set $end
+$var wire 1 J" result $end
+$var wire 1 "" cout $end
+$var wire 1 &" cin $end
+$var wire 1 K" bmux $end
+$scope module bmux2to1 $end
+$var wire 1 G" a $end
+$var wire 1 L" b $end
+$var wire 1 M" s $end
+$var wire 1 K" out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 | a $end
+$var wire 1 x b $end
+$var wire 1 H" d $end
+$var wire 1 N" s0 $end
+$var wire 1 O" s1 $end
+$var wire 1 J" out $end
+$var wire 1 s c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 F" a $end
+$var wire 1 K" b $end
+$var wire 1 "" cout $end
+$var wire 1 s sum $end
+$var wire 1 &" cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 (" C1 $end
+$var wire 1 '" C2 $end
+$var wire 1 &" C3 $end
+$var wire 1 _ C4 $end
+$var wire 1 k G $end
+$var wire 1 g P $end
+$var wire 1 P" cin $end
+$var wire 1 !" g0 $end
+$var wire 1 ~ g1 $end
+$var wire 1 } g2 $end
+$var wire 1 | g3 $end
+$var wire 1 { p0 $end
+$var wire 1 z p1 $end
+$var wire 1 y p2 $end
+$var wire 1 x p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 &" cin $end
+$var wire 1 _ cout $end
+$var wire 1 U v $end
+$upscope $end
+$upscope $end
+$scope module alu_1 $end
+$var wire 4 Q" a [3:0] $end
+$var wire 4 R" b [3:0] $end
+$var wire 1 n cin $end
+$var wire 1 _ cout $end
+$var wire 1 S" less $end
+$var wire 3 T" op [2:0] $end
+$var wire 1 U overflow $end
+$var wire 1 ` set $end
+$var wire 1 U" zero $end
+$var wire 1 V" set3 $end
+$var wire 1 W" set2 $end
+$var wire 1 X" set1 $end
+$var wire 1 Y" set0 $end
+$var wire 4 Z" result [3:0] $end
+$var wire 1 [" p3 $end
+$var wire 1 \" p2 $end
+$var wire 1 ]" p1 $end
+$var wire 1 ^" p0 $end
+$var wire 1 _" g3 $end
+$var wire 1 `" g2 $end
+$var wire 1 a" g1 $end
+$var wire 1 b" g0 $end
+$var wire 1 c" cout3 $end
+$var wire 1 d" cout2 $end
+$var wire 1 e" cout1 $end
+$var wire 1 f" cout0 $end
+$var wire 1 f P $end
+$var wire 1 j G $end
+$var wire 1 g" C3 $end
+$var wire 1 h" C2 $end
+$var wire 1 i" C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 j" a $end
+$var wire 1 k" b $end
+$var wire 1 n cin $end
+$var wire 1 b" g $end
+$var wire 1 S" less $end
+$var wire 3 l" op [2:0] $end
+$var wire 1 ^" p $end
+$var wire 1 Y" set $end
+$var wire 1 m" result $end
+$var wire 1 f" cout $end
+$var wire 1 n" bmux $end
+$scope module bmux2to1 $end
+$var wire 1 k" a $end
+$var wire 1 o" b $end
+$var wire 1 p" s $end
+$var wire 1 n" out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 b" a $end
+$var wire 1 ^" b $end
+$var wire 1 S" d $end
+$var wire 1 q" s0 $end
+$var wire 1 r" s1 $end
+$var wire 1 m" out $end
+$var wire 1 Y" c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 j" a $end
+$var wire 1 n" b $end
+$var wire 1 n cin $end
+$var wire 1 f" cout $end
+$var wire 1 Y" sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 s" a $end
+$var wire 1 t" b $end
+$var wire 1 a" g $end
+$var wire 1 u" less $end
+$var wire 3 v" op [2:0] $end
+$var wire 1 ]" p $end
+$var wire 1 X" set $end
+$var wire 1 w" result $end
+$var wire 1 e" cout $end
+$var wire 1 i" cin $end
+$var wire 1 x" bmux $end
+$scope module bmux2to1 $end
+$var wire 1 t" a $end
+$var wire 1 y" b $end
+$var wire 1 z" s $end
+$var wire 1 x" out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 a" a $end
+$var wire 1 ]" b $end
+$var wire 1 u" d $end
+$var wire 1 {" s0 $end
+$var wire 1 |" s1 $end
+$var wire 1 w" out $end
+$var wire 1 X" c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 s" a $end
+$var wire 1 x" b $end
+$var wire 1 e" cout $end
+$var wire 1 X" sum $end
+$var wire 1 i" cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 }" a $end
+$var wire 1 ~" b $end
+$var wire 1 `" g $end
+$var wire 1 !# less $end
+$var wire 3 "# op [2:0] $end
+$var wire 1 \" p $end
+$var wire 1 W" set $end
+$var wire 1 ## result $end
+$var wire 1 d" cout $end
+$var wire 1 h" cin $end
+$var wire 1 $# bmux $end
+$scope module bmux2to1 $end
+$var wire 1 ~" a $end
+$var wire 1 %# b $end
+$var wire 1 &# s $end
+$var wire 1 $# out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 `" a $end
+$var wire 1 \" b $end
+$var wire 1 !# d $end
+$var wire 1 '# s0 $end
+$var wire 1 (# s1 $end
+$var wire 1 ## out $end
+$var wire 1 W" c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 }" a $end
+$var wire 1 $# b $end
+$var wire 1 d" cout $end
+$var wire 1 W" sum $end
+$var wire 1 h" cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 )# a $end
+$var wire 1 *# b $end
+$var wire 1 _" g $end
+$var wire 1 +# less $end
+$var wire 3 ,# op [2:0] $end
+$var wire 1 [" p $end
+$var wire 1 V" set $end
+$var wire 1 -# result $end
+$var wire 1 c" cout $end
+$var wire 1 g" cin $end
+$var wire 1 .# bmux $end
+$scope module bmux2to1 $end
+$var wire 1 *# a $end
+$var wire 1 /# b $end
+$var wire 1 0# s $end
+$var wire 1 .# out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 _" a $end
+$var wire 1 [" b $end
+$var wire 1 +# d $end
+$var wire 1 1# s0 $end
+$var wire 1 2# s1 $end
+$var wire 1 -# out $end
+$var wire 1 V" c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 )# a $end
+$var wire 1 .# b $end
+$var wire 1 c" cout $end
+$var wire 1 V" sum $end
+$var wire 1 g" cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 i" C1 $end
+$var wire 1 h" C2 $end
+$var wire 1 g" C3 $end
+$var wire 1 _ C4 $end
+$var wire 1 j G $end
+$var wire 1 f P $end
+$var wire 1 3# cin $end
+$var wire 1 b" g0 $end
+$var wire 1 a" g1 $end
+$var wire 1 `" g2 $end
+$var wire 1 _" g3 $end
+$var wire 1 ^" p0 $end
+$var wire 1 ]" p1 $end
+$var wire 1 \" p2 $end
+$var wire 1 [" p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 g" cin $end
+$var wire 1 _ cout $end
+$var wire 1 U v $end
+$upscope $end
+$upscope $end
+$scope module alu_2 $end
+$var wire 4 4# a [3:0] $end
+$var wire 4 5# b [3:0] $end
+$var wire 1 m cin $end
+$var wire 1 _ cout $end
+$var wire 1 6# less $end
+$var wire 3 7# op [2:0] $end
+$var wire 1 U overflow $end
+$var wire 1 ` set $end
+$var wire 1 8# zero $end
+$var wire 1 9# set3 $end
+$var wire 1 :# set2 $end
+$var wire 1 ;# set1 $end
+$var wire 1 <# set0 $end
+$var wire 4 =# result [3:0] $end
+$var wire 1 ># p3 $end
+$var wire 1 ?# p2 $end
+$var wire 1 @# p1 $end
+$var wire 1 A# p0 $end
+$var wire 1 B# g3 $end
+$var wire 1 C# g2 $end
+$var wire 1 D# g1 $end
+$var wire 1 E# g0 $end
+$var wire 1 F# cout3 $end
+$var wire 1 G# cout2 $end
+$var wire 1 H# cout1 $end
+$var wire 1 I# cout0 $end
+$var wire 1 e P $end
+$var wire 1 i G $end
+$var wire 1 J# C3 $end
+$var wire 1 K# C2 $end
+$var wire 1 L# C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 M# a $end
+$var wire 1 N# b $end
+$var wire 1 m cin $end
+$var wire 1 E# g $end
+$var wire 1 6# less $end
+$var wire 3 O# op [2:0] $end
+$var wire 1 A# p $end
+$var wire 1 <# set $end
+$var wire 1 P# result $end
+$var wire 1 I# cout $end
+$var wire 1 Q# bmux $end
+$scope module bmux2to1 $end
+$var wire 1 N# a $end
+$var wire 1 R# b $end
+$var wire 1 S# s $end
+$var wire 1 Q# out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 E# a $end
+$var wire 1 A# b $end
+$var wire 1 6# d $end
+$var wire 1 T# s0 $end
+$var wire 1 U# s1 $end
+$var wire 1 P# out $end
+$var wire 1 <# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 M# a $end
+$var wire 1 Q# b $end
+$var wire 1 m cin $end
+$var wire 1 I# cout $end
+$var wire 1 <# sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 V# a $end
+$var wire 1 W# b $end
+$var wire 1 D# g $end
+$var wire 1 X# less $end
+$var wire 3 Y# op [2:0] $end
+$var wire 1 @# p $end
+$var wire 1 ;# set $end
+$var wire 1 Z# result $end
+$var wire 1 H# cout $end
+$var wire 1 L# cin $end
+$var wire 1 [# bmux $end
+$scope module bmux2to1 $end
+$var wire 1 W# a $end
+$var wire 1 \# b $end
+$var wire 1 ]# s $end
+$var wire 1 [# out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 D# a $end
+$var wire 1 @# b $end
+$var wire 1 X# d $end
+$var wire 1 ^# s0 $end
+$var wire 1 _# s1 $end
+$var wire 1 Z# out $end
+$var wire 1 ;# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 V# a $end
+$var wire 1 [# b $end
+$var wire 1 H# cout $end
+$var wire 1 ;# sum $end
+$var wire 1 L# cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 `# a $end
+$var wire 1 a# b $end
+$var wire 1 C# g $end
+$var wire 1 b# less $end
+$var wire 3 c# op [2:0] $end
+$var wire 1 ?# p $end
+$var wire 1 :# set $end
+$var wire 1 d# result $end
+$var wire 1 G# cout $end
+$var wire 1 K# cin $end
+$var wire 1 e# bmux $end
+$scope module bmux2to1 $end
+$var wire 1 a# a $end
+$var wire 1 f# b $end
+$var wire 1 g# s $end
+$var wire 1 e# out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 C# a $end
+$var wire 1 ?# b $end
+$var wire 1 b# d $end
+$var wire 1 h# s0 $end
+$var wire 1 i# s1 $end
+$var wire 1 d# out $end
+$var wire 1 :# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 `# a $end
+$var wire 1 e# b $end
+$var wire 1 G# cout $end
+$var wire 1 :# sum $end
+$var wire 1 K# cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 j# a $end
+$var wire 1 k# b $end
+$var wire 1 B# g $end
+$var wire 1 l# less $end
+$var wire 3 m# op [2:0] $end
+$var wire 1 ># p $end
+$var wire 1 9# set $end
+$var wire 1 n# result $end
+$var wire 1 F# cout $end
+$var wire 1 J# cin $end
+$var wire 1 o# bmux $end
+$scope module bmux2to1 $end
+$var wire 1 k# a $end
+$var wire 1 p# b $end
+$var wire 1 q# s $end
+$var wire 1 o# out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 B# a $end
+$var wire 1 ># b $end
+$var wire 1 l# d $end
+$var wire 1 r# s0 $end
+$var wire 1 s# s1 $end
+$var wire 1 n# out $end
+$var wire 1 9# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 j# a $end
+$var wire 1 o# b $end
+$var wire 1 F# cout $end
+$var wire 1 9# sum $end
+$var wire 1 J# cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 L# C1 $end
+$var wire 1 K# C2 $end
+$var wire 1 J# C3 $end
+$var wire 1 _ C4 $end
+$var wire 1 i G $end
+$var wire 1 e P $end
+$var wire 1 t# cin $end
+$var wire 1 E# g0 $end
+$var wire 1 D# g1 $end
+$var wire 1 C# g2 $end
+$var wire 1 B# g3 $end
+$var wire 1 A# p0 $end
+$var wire 1 @# p1 $end
+$var wire 1 ?# p2 $end
+$var wire 1 ># p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 J# cin $end
+$var wire 1 _ cout $end
+$var wire 1 U v $end
+$upscope $end
+$upscope $end
+$scope module alu_3 $end
+$var wire 4 u# a [3:0] $end
+$var wire 4 v# b [3:0] $end
+$var wire 1 l cin $end
+$var wire 1 _ cout $end
+$var wire 1 w# less $end
+$var wire 3 x# op [2:0] $end
+$var wire 1 U overflow $end
+$var wire 1 S set $end
+$var wire 1 y# zero $end
+$var wire 1 z# set3 $end
+$var wire 1 {# set2 $end
+$var wire 1 |# set1 $end
+$var wire 1 }# set0 $end
+$var wire 4 ~# result [3:0] $end
+$var wire 1 !$ p3 $end
+$var wire 1 "$ p2 $end
+$var wire 1 #$ p1 $end
+$var wire 1 $$ p0 $end
+$var wire 1 %$ g3 $end
+$var wire 1 &$ g2 $end
+$var wire 1 '$ g1 $end
+$var wire 1 ($ g0 $end
+$var wire 1 )$ cout3 $end
+$var wire 1 *$ cout2 $end
+$var wire 1 +$ cout1 $end
+$var wire 1 ,$ cout0 $end
+$var wire 1 d P $end
+$var wire 1 h G $end
+$var wire 1 -$ C3 $end
+$var wire 1 .$ C2 $end
+$var wire 1 /$ C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 0$ a $end
+$var wire 1 1$ b $end
+$var wire 1 l cin $end
+$var wire 1 ($ g $end
+$var wire 1 w# less $end
+$var wire 3 2$ op [2:0] $end
+$var wire 1 $$ p $end
+$var wire 1 }# set $end
+$var wire 1 3$ result $end
+$var wire 1 ,$ cout $end
+$var wire 1 4$ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 1$ a $end
+$var wire 1 5$ b $end
+$var wire 1 6$ s $end
+$var wire 1 4$ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ($ a $end
+$var wire 1 $$ b $end
+$var wire 1 w# d $end
+$var wire 1 7$ s0 $end
+$var wire 1 8$ s1 $end
+$var wire 1 3$ out $end
+$var wire 1 }# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 0$ a $end
+$var wire 1 4$ b $end
+$var wire 1 l cin $end
+$var wire 1 ,$ cout $end
+$var wire 1 }# sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 9$ a $end
+$var wire 1 :$ b $end
+$var wire 1 '$ g $end
+$var wire 1 ;$ less $end
+$var wire 3 <$ op [2:0] $end
+$var wire 1 #$ p $end
+$var wire 1 |# set $end
+$var wire 1 =$ result $end
+$var wire 1 +$ cout $end
+$var wire 1 /$ cin $end
+$var wire 1 >$ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 :$ a $end
+$var wire 1 ?$ b $end
+$var wire 1 @$ s $end
+$var wire 1 >$ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 '$ a $end
+$var wire 1 #$ b $end
+$var wire 1 ;$ d $end
+$var wire 1 A$ s0 $end
+$var wire 1 B$ s1 $end
+$var wire 1 =$ out $end
+$var wire 1 |# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 9$ a $end
+$var wire 1 >$ b $end
+$var wire 1 +$ cout $end
+$var wire 1 |# sum $end
+$var wire 1 /$ cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 C$ a $end
+$var wire 1 D$ b $end
+$var wire 1 &$ g $end
+$var wire 1 E$ less $end
+$var wire 3 F$ op [2:0] $end
+$var wire 1 "$ p $end
+$var wire 1 {# set $end
+$var wire 1 G$ result $end
+$var wire 1 *$ cout $end
+$var wire 1 .$ cin $end
+$var wire 1 H$ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 D$ a $end
+$var wire 1 I$ b $end
+$var wire 1 J$ s $end
+$var wire 1 H$ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 &$ a $end
+$var wire 1 "$ b $end
+$var wire 1 E$ d $end
+$var wire 1 K$ s0 $end
+$var wire 1 L$ s1 $end
+$var wire 1 G$ out $end
+$var wire 1 {# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 C$ a $end
+$var wire 1 H$ b $end
+$var wire 1 *$ cout $end
+$var wire 1 {# sum $end
+$var wire 1 .$ cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 M$ a $end
+$var wire 1 N$ b $end
+$var wire 1 %$ g $end
+$var wire 1 O$ less $end
+$var wire 3 P$ op [2:0] $end
+$var wire 1 !$ p $end
+$var wire 1 z# set $end
+$var wire 1 Q$ result $end
+$var wire 1 )$ cout $end
+$var wire 1 -$ cin $end
+$var wire 1 R$ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 N$ a $end
+$var wire 1 S$ b $end
+$var wire 1 T$ s $end
+$var wire 1 R$ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 %$ a $end
+$var wire 1 !$ b $end
+$var wire 1 O$ d $end
+$var wire 1 U$ s0 $end
+$var wire 1 V$ s1 $end
+$var wire 1 Q$ out $end
+$var wire 1 z# c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 M$ a $end
+$var wire 1 R$ b $end
+$var wire 1 )$ cout $end
+$var wire 1 z# sum $end
+$var wire 1 -$ cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 /$ C1 $end
+$var wire 1 .$ C2 $end
+$var wire 1 -$ C3 $end
+$var wire 1 _ C4 $end
+$var wire 1 h G $end
+$var wire 1 d P $end
+$var wire 1 W$ cin $end
+$var wire 1 ($ g0 $end
+$var wire 1 '$ g1 $end
+$var wire 1 &$ g2 $end
+$var wire 1 %$ g3 $end
+$var wire 1 $$ p0 $end
+$var wire 1 #$ p1 $end
+$var wire 1 "$ p2 $end
+$var wire 1 !$ p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 -$ cin $end
+$var wire 1 _ cout $end
+$var wire 1 U v $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module alu1 $end
+$var wire 1 S G $end
+$var wire 1 S P $end
+$var wire 16 X$ a [15:0] $end
+$var wire 16 Y$ b [15:0] $end
+$var wire 1 [ cin $end
+$var wire 1 S cout $end
+$var wire 1 Z$ less $end
+$var wire 1 [$ null_cout $end
+$var wire 1 \$ null_set $end
+$var wire 3 ]$ op [2:0] $end
+$var wire 1 V overflow $end
+$var wire 1 W zero $end
+$var wire 4 ^$ zeros [3:0] $end
+$var wire 1 Y set $end
+$var wire 16 _$ result [15:0] $end
+$var wire 1 `$ p3 $end
+$var wire 1 a$ p2 $end
+$var wire 1 b$ p1 $end
+$var wire 1 c$ p0 $end
+$var wire 1 d$ g3 $end
+$var wire 1 e$ g2 $end
+$var wire 1 f$ g1 $end
+$var wire 1 g$ g0 $end
+$var wire 1 h$ C3 $end
+$var wire 1 i$ C2 $end
+$var wire 1 j$ C1 $end
+$scope module CLA1 $end
+$var wire 1 j$ C1 $end
+$var wire 1 i$ C2 $end
+$var wire 1 h$ C3 $end
+$var wire 1 S C4 $end
+$var wire 1 S G $end
+$var wire 1 S P $end
+$var wire 1 [ cin $end
+$var wire 1 `$ p3 $end
+$var wire 1 a$ p2 $end
+$var wire 1 b$ p1 $end
+$var wire 1 c$ p0 $end
+$var wire 1 d$ g3 $end
+$var wire 1 e$ g2 $end
+$var wire 1 f$ g1 $end
+$var wire 1 g$ g0 $end
+$upscope $end
+$scope module alu_0 $end
+$var wire 4 k$ a [3:0] $end
+$var wire 4 l$ b [3:0] $end
+$var wire 1 [ cin $end
+$var wire 1 [$ cout $end
+$var wire 1 Z$ less $end
+$var wire 3 m$ op [2:0] $end
+$var wire 1 V overflow $end
+$var wire 1 \$ set $end
+$var wire 1 n$ zero $end
+$var wire 1 o$ set3 $end
+$var wire 1 p$ set2 $end
+$var wire 1 q$ set1 $end
+$var wire 1 r$ set0 $end
+$var wire 4 s$ result [3:0] $end
+$var wire 1 t$ p3 $end
+$var wire 1 u$ p2 $end
+$var wire 1 v$ p1 $end
+$var wire 1 w$ p0 $end
+$var wire 1 x$ g3 $end
+$var wire 1 y$ g2 $end
+$var wire 1 z$ g1 $end
+$var wire 1 {$ g0 $end
+$var wire 1 |$ cout3 $end
+$var wire 1 }$ cout2 $end
+$var wire 1 ~$ cout1 $end
+$var wire 1 !% cout0 $end
+$var wire 1 c$ P $end
+$var wire 1 g$ G $end
+$var wire 1 "% C3 $end
+$var wire 1 #% C2 $end
+$var wire 1 $% C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 %% a $end
+$var wire 1 &% b $end
+$var wire 1 [ cin $end
+$var wire 1 {$ g $end
+$var wire 1 Z$ less $end
+$var wire 3 '% op [2:0] $end
+$var wire 1 w$ p $end
+$var wire 1 r$ set $end
+$var wire 1 (% result $end
+$var wire 1 !% cout $end
+$var wire 1 )% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 &% a $end
+$var wire 1 *% b $end
+$var wire 1 +% s $end
+$var wire 1 )% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 {$ a $end
+$var wire 1 w$ b $end
+$var wire 1 Z$ d $end
+$var wire 1 ,% s0 $end
+$var wire 1 -% s1 $end
+$var wire 1 (% out $end
+$var wire 1 r$ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 %% a $end
+$var wire 1 )% b $end
+$var wire 1 [ cin $end
+$var wire 1 !% cout $end
+$var wire 1 r$ sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 .% a $end
+$var wire 1 /% b $end
+$var wire 1 z$ g $end
+$var wire 1 0% less $end
+$var wire 3 1% op [2:0] $end
+$var wire 1 v$ p $end
+$var wire 1 q$ set $end
+$var wire 1 2% result $end
+$var wire 1 ~$ cout $end
+$var wire 1 $% cin $end
+$var wire 1 3% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 /% a $end
+$var wire 1 4% b $end
+$var wire 1 5% s $end
+$var wire 1 3% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 z$ a $end
+$var wire 1 v$ b $end
+$var wire 1 0% d $end
+$var wire 1 6% s0 $end
+$var wire 1 7% s1 $end
+$var wire 1 2% out $end
+$var wire 1 q$ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 .% a $end
+$var wire 1 3% b $end
+$var wire 1 ~$ cout $end
+$var wire 1 q$ sum $end
+$var wire 1 $% cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 8% a $end
+$var wire 1 9% b $end
+$var wire 1 y$ g $end
+$var wire 1 :% less $end
+$var wire 3 ;% op [2:0] $end
+$var wire 1 u$ p $end
+$var wire 1 p$ set $end
+$var wire 1 <% result $end
+$var wire 1 }$ cout $end
+$var wire 1 #% cin $end
+$var wire 1 =% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 9% a $end
+$var wire 1 >% b $end
+$var wire 1 ?% s $end
+$var wire 1 =% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 y$ a $end
+$var wire 1 u$ b $end
+$var wire 1 :% d $end
+$var wire 1 @% s0 $end
+$var wire 1 A% s1 $end
+$var wire 1 <% out $end
+$var wire 1 p$ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 8% a $end
+$var wire 1 =% b $end
+$var wire 1 }$ cout $end
+$var wire 1 p$ sum $end
+$var wire 1 #% cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 B% a $end
+$var wire 1 C% b $end
+$var wire 1 x$ g $end
+$var wire 1 D% less $end
+$var wire 3 E% op [2:0] $end
+$var wire 1 t$ p $end
+$var wire 1 o$ set $end
+$var wire 1 F% result $end
+$var wire 1 |$ cout $end
+$var wire 1 "% cin $end
+$var wire 1 G% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 C% a $end
+$var wire 1 H% b $end
+$var wire 1 I% s $end
+$var wire 1 G% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 x$ a $end
+$var wire 1 t$ b $end
+$var wire 1 D% d $end
+$var wire 1 J% s0 $end
+$var wire 1 K% s1 $end
+$var wire 1 F% out $end
+$var wire 1 o$ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 B% a $end
+$var wire 1 G% b $end
+$var wire 1 |$ cout $end
+$var wire 1 o$ sum $end
+$var wire 1 "% cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 $% C1 $end
+$var wire 1 #% C2 $end
+$var wire 1 "% C3 $end
+$var wire 1 [$ C4 $end
+$var wire 1 g$ G $end
+$var wire 1 c$ P $end
+$var wire 1 L% cin $end
+$var wire 1 {$ g0 $end
+$var wire 1 z$ g1 $end
+$var wire 1 y$ g2 $end
+$var wire 1 x$ g3 $end
+$var wire 1 w$ p0 $end
+$var wire 1 v$ p1 $end
+$var wire 1 u$ p2 $end
+$var wire 1 t$ p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 "% cin $end
+$var wire 1 [$ cout $end
+$var wire 1 V v $end
+$upscope $end
+$upscope $end
+$scope module alu_1 $end
+$var wire 4 M% a [3:0] $end
+$var wire 4 N% b [3:0] $end
+$var wire 1 j$ cin $end
+$var wire 1 [$ cout $end
+$var wire 1 O% less $end
+$var wire 3 P% op [2:0] $end
+$var wire 1 V overflow $end
+$var wire 1 \$ set $end
+$var wire 1 Q% zero $end
+$var wire 1 R% set3 $end
+$var wire 1 S% set2 $end
+$var wire 1 T% set1 $end
+$var wire 1 U% set0 $end
+$var wire 4 V% result [3:0] $end
+$var wire 1 W% p3 $end
+$var wire 1 X% p2 $end
+$var wire 1 Y% p1 $end
+$var wire 1 Z% p0 $end
+$var wire 1 [% g3 $end
+$var wire 1 \% g2 $end
+$var wire 1 ]% g1 $end
+$var wire 1 ^% g0 $end
+$var wire 1 _% cout3 $end
+$var wire 1 `% cout2 $end
+$var wire 1 a% cout1 $end
+$var wire 1 b% cout0 $end
+$var wire 1 b$ P $end
+$var wire 1 f$ G $end
+$var wire 1 c% C3 $end
+$var wire 1 d% C2 $end
+$var wire 1 e% C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 f% a $end
+$var wire 1 g% b $end
+$var wire 1 j$ cin $end
+$var wire 1 ^% g $end
+$var wire 1 O% less $end
+$var wire 3 h% op [2:0] $end
+$var wire 1 Z% p $end
+$var wire 1 U% set $end
+$var wire 1 i% result $end
+$var wire 1 b% cout $end
+$var wire 1 j% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 g% a $end
+$var wire 1 k% b $end
+$var wire 1 l% s $end
+$var wire 1 j% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ^% a $end
+$var wire 1 Z% b $end
+$var wire 1 O% d $end
+$var wire 1 m% s0 $end
+$var wire 1 n% s1 $end
+$var wire 1 i% out $end
+$var wire 1 U% c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 f% a $end
+$var wire 1 j% b $end
+$var wire 1 j$ cin $end
+$var wire 1 b% cout $end
+$var wire 1 U% sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 o% a $end
+$var wire 1 p% b $end
+$var wire 1 ]% g $end
+$var wire 1 q% less $end
+$var wire 3 r% op [2:0] $end
+$var wire 1 Y% p $end
+$var wire 1 T% set $end
+$var wire 1 s% result $end
+$var wire 1 a% cout $end
+$var wire 1 e% cin $end
+$var wire 1 t% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 p% a $end
+$var wire 1 u% b $end
+$var wire 1 v% s $end
+$var wire 1 t% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ]% a $end
+$var wire 1 Y% b $end
+$var wire 1 q% d $end
+$var wire 1 w% s0 $end
+$var wire 1 x% s1 $end
+$var wire 1 s% out $end
+$var wire 1 T% c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 o% a $end
+$var wire 1 t% b $end
+$var wire 1 a% cout $end
+$var wire 1 T% sum $end
+$var wire 1 e% cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 y% a $end
+$var wire 1 z% b $end
+$var wire 1 \% g $end
+$var wire 1 {% less $end
+$var wire 3 |% op [2:0] $end
+$var wire 1 X% p $end
+$var wire 1 S% set $end
+$var wire 1 }% result $end
+$var wire 1 `% cout $end
+$var wire 1 d% cin $end
+$var wire 1 ~% bmux $end
+$scope module bmux2to1 $end
+$var wire 1 z% a $end
+$var wire 1 !& b $end
+$var wire 1 "& s $end
+$var wire 1 ~% out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 \% a $end
+$var wire 1 X% b $end
+$var wire 1 {% d $end
+$var wire 1 #& s0 $end
+$var wire 1 $& s1 $end
+$var wire 1 }% out $end
+$var wire 1 S% c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 y% a $end
+$var wire 1 ~% b $end
+$var wire 1 `% cout $end
+$var wire 1 S% sum $end
+$var wire 1 d% cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 %& a $end
+$var wire 1 && b $end
+$var wire 1 [% g $end
+$var wire 1 '& less $end
+$var wire 3 (& op [2:0] $end
+$var wire 1 W% p $end
+$var wire 1 R% set $end
+$var wire 1 )& result $end
+$var wire 1 _% cout $end
+$var wire 1 c% cin $end
+$var wire 1 *& bmux $end
+$scope module bmux2to1 $end
+$var wire 1 && a $end
+$var wire 1 +& b $end
+$var wire 1 ,& s $end
+$var wire 1 *& out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 [% a $end
+$var wire 1 W% b $end
+$var wire 1 '& d $end
+$var wire 1 -& s0 $end
+$var wire 1 .& s1 $end
+$var wire 1 )& out $end
+$var wire 1 R% c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 %& a $end
+$var wire 1 *& b $end
+$var wire 1 _% cout $end
+$var wire 1 R% sum $end
+$var wire 1 c% cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 e% C1 $end
+$var wire 1 d% C2 $end
+$var wire 1 c% C3 $end
+$var wire 1 [$ C4 $end
+$var wire 1 f$ G $end
+$var wire 1 b$ P $end
+$var wire 1 /& cin $end
+$var wire 1 ^% g0 $end
+$var wire 1 ]% g1 $end
+$var wire 1 \% g2 $end
+$var wire 1 [% g3 $end
+$var wire 1 Z% p0 $end
+$var wire 1 Y% p1 $end
+$var wire 1 X% p2 $end
+$var wire 1 W% p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 c% cin $end
+$var wire 1 [$ cout $end
+$var wire 1 V v $end
+$upscope $end
+$upscope $end
+$scope module alu_2 $end
+$var wire 4 0& a [3:0] $end
+$var wire 4 1& b [3:0] $end
+$var wire 1 i$ cin $end
+$var wire 1 [$ cout $end
+$var wire 1 2& less $end
+$var wire 3 3& op [2:0] $end
+$var wire 1 V overflow $end
+$var wire 1 \$ set $end
+$var wire 1 4& zero $end
+$var wire 1 5& set3 $end
+$var wire 1 6& set2 $end
+$var wire 1 7& set1 $end
+$var wire 1 8& set0 $end
+$var wire 4 9& result [3:0] $end
+$var wire 1 :& p3 $end
+$var wire 1 ;& p2 $end
+$var wire 1 <& p1 $end
+$var wire 1 =& p0 $end
+$var wire 1 >& g3 $end
+$var wire 1 ?& g2 $end
+$var wire 1 @& g1 $end
+$var wire 1 A& g0 $end
+$var wire 1 B& cout3 $end
+$var wire 1 C& cout2 $end
+$var wire 1 D& cout1 $end
+$var wire 1 E& cout0 $end
+$var wire 1 a$ P $end
+$var wire 1 e$ G $end
+$var wire 1 F& C3 $end
+$var wire 1 G& C2 $end
+$var wire 1 H& C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 I& a $end
+$var wire 1 J& b $end
+$var wire 1 i$ cin $end
+$var wire 1 A& g $end
+$var wire 1 2& less $end
+$var wire 3 K& op [2:0] $end
+$var wire 1 =& p $end
+$var wire 1 8& set $end
+$var wire 1 L& result $end
+$var wire 1 E& cout $end
+$var wire 1 M& bmux $end
+$scope module bmux2to1 $end
+$var wire 1 J& a $end
+$var wire 1 N& b $end
+$var wire 1 O& s $end
+$var wire 1 M& out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 A& a $end
+$var wire 1 =& b $end
+$var wire 1 2& d $end
+$var wire 1 P& s0 $end
+$var wire 1 Q& s1 $end
+$var wire 1 L& out $end
+$var wire 1 8& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 I& a $end
+$var wire 1 M& b $end
+$var wire 1 i$ cin $end
+$var wire 1 E& cout $end
+$var wire 1 8& sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 R& a $end
+$var wire 1 S& b $end
+$var wire 1 @& g $end
+$var wire 1 T& less $end
+$var wire 3 U& op [2:0] $end
+$var wire 1 <& p $end
+$var wire 1 7& set $end
+$var wire 1 V& result $end
+$var wire 1 D& cout $end
+$var wire 1 H& cin $end
+$var wire 1 W& bmux $end
+$scope module bmux2to1 $end
+$var wire 1 S& a $end
+$var wire 1 X& b $end
+$var wire 1 Y& s $end
+$var wire 1 W& out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 @& a $end
+$var wire 1 <& b $end
+$var wire 1 T& d $end
+$var wire 1 Z& s0 $end
+$var wire 1 [& s1 $end
+$var wire 1 V& out $end
+$var wire 1 7& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 R& a $end
+$var wire 1 W& b $end
+$var wire 1 D& cout $end
+$var wire 1 7& sum $end
+$var wire 1 H& cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 \& a $end
+$var wire 1 ]& b $end
+$var wire 1 ?& g $end
+$var wire 1 ^& less $end
+$var wire 3 _& op [2:0] $end
+$var wire 1 ;& p $end
+$var wire 1 6& set $end
+$var wire 1 `& result $end
+$var wire 1 C& cout $end
+$var wire 1 G& cin $end
+$var wire 1 a& bmux $end
+$scope module bmux2to1 $end
+$var wire 1 ]& a $end
+$var wire 1 b& b $end
+$var wire 1 c& s $end
+$var wire 1 a& out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ?& a $end
+$var wire 1 ;& b $end
+$var wire 1 ^& d $end
+$var wire 1 d& s0 $end
+$var wire 1 e& s1 $end
+$var wire 1 `& out $end
+$var wire 1 6& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 \& a $end
+$var wire 1 a& b $end
+$var wire 1 C& cout $end
+$var wire 1 6& sum $end
+$var wire 1 G& cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 f& a $end
+$var wire 1 g& b $end
+$var wire 1 >& g $end
+$var wire 1 h& less $end
+$var wire 3 i& op [2:0] $end
+$var wire 1 :& p $end
+$var wire 1 5& set $end
+$var wire 1 j& result $end
+$var wire 1 B& cout $end
+$var wire 1 F& cin $end
+$var wire 1 k& bmux $end
+$scope module bmux2to1 $end
+$var wire 1 g& a $end
+$var wire 1 l& b $end
+$var wire 1 m& s $end
+$var wire 1 k& out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 >& a $end
+$var wire 1 :& b $end
+$var wire 1 h& d $end
+$var wire 1 n& s0 $end
+$var wire 1 o& s1 $end
+$var wire 1 j& out $end
+$var wire 1 5& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 f& a $end
+$var wire 1 k& b $end
+$var wire 1 B& cout $end
+$var wire 1 5& sum $end
+$var wire 1 F& cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 H& C1 $end
+$var wire 1 G& C2 $end
+$var wire 1 F& C3 $end
+$var wire 1 [$ C4 $end
+$var wire 1 e$ G $end
+$var wire 1 a$ P $end
+$var wire 1 p& cin $end
+$var wire 1 A& g0 $end
+$var wire 1 @& g1 $end
+$var wire 1 ?& g2 $end
+$var wire 1 >& g3 $end
+$var wire 1 =& p0 $end
+$var wire 1 <& p1 $end
+$var wire 1 ;& p2 $end
+$var wire 1 :& p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 F& cin $end
+$var wire 1 [$ cout $end
+$var wire 1 V v $end
+$upscope $end
+$upscope $end
+$scope module alu_3 $end
+$var wire 4 q& a [3:0] $end
+$var wire 4 r& b [3:0] $end
+$var wire 1 h$ cin $end
+$var wire 1 [$ cout $end
+$var wire 1 s& less $end
+$var wire 3 t& op [2:0] $end
+$var wire 1 V overflow $end
+$var wire 1 u& zero $end
+$var wire 1 v& set3 $end
+$var wire 1 w& set2 $end
+$var wire 1 x& set1 $end
+$var wire 1 y& set0 $end
+$var wire 1 Y set $end
+$var wire 4 z& result [3:0] $end
+$var wire 1 {& p3 $end
+$var wire 1 |& p2 $end
+$var wire 1 }& p1 $end
+$var wire 1 ~& p0 $end
+$var wire 1 !' g3 $end
+$var wire 1 "' g2 $end
+$var wire 1 #' g1 $end
+$var wire 1 $' g0 $end
+$var wire 1 %' cout3 $end
+$var wire 1 &' cout2 $end
+$var wire 1 '' cout1 $end
+$var wire 1 (' cout0 $end
+$var wire 1 `$ P $end
+$var wire 1 d$ G $end
+$var wire 1 )' C3 $end
+$var wire 1 *' C2 $end
+$var wire 1 +' C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 ,' a $end
+$var wire 1 -' b $end
+$var wire 1 h$ cin $end
+$var wire 1 $' g $end
+$var wire 1 s& less $end
+$var wire 3 .' op [2:0] $end
+$var wire 1 ~& p $end
+$var wire 1 y& set $end
+$var wire 1 /' result $end
+$var wire 1 (' cout $end
+$var wire 1 0' bmux $end
+$scope module bmux2to1 $end
+$var wire 1 -' a $end
+$var wire 1 1' b $end
+$var wire 1 2' s $end
+$var wire 1 0' out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 $' a $end
+$var wire 1 ~& b $end
+$var wire 1 s& d $end
+$var wire 1 3' s0 $end
+$var wire 1 4' s1 $end
+$var wire 1 /' out $end
+$var wire 1 y& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 ,' a $end
+$var wire 1 0' b $end
+$var wire 1 h$ cin $end
+$var wire 1 (' cout $end
+$var wire 1 y& sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 5' a $end
+$var wire 1 6' b $end
+$var wire 1 #' g $end
+$var wire 1 7' less $end
+$var wire 3 8' op [2:0] $end
+$var wire 1 }& p $end
+$var wire 1 x& set $end
+$var wire 1 9' result $end
+$var wire 1 '' cout $end
+$var wire 1 +' cin $end
+$var wire 1 :' bmux $end
+$scope module bmux2to1 $end
+$var wire 1 6' a $end
+$var wire 1 ;' b $end
+$var wire 1 <' s $end
+$var wire 1 :' out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 #' a $end
+$var wire 1 }& b $end
+$var wire 1 7' d $end
+$var wire 1 =' s0 $end
+$var wire 1 >' s1 $end
+$var wire 1 9' out $end
+$var wire 1 x& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 5' a $end
+$var wire 1 :' b $end
+$var wire 1 '' cout $end
+$var wire 1 x& sum $end
+$var wire 1 +' cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 ?' a $end
+$var wire 1 @' b $end
+$var wire 1 "' g $end
+$var wire 1 A' less $end
+$var wire 3 B' op [2:0] $end
+$var wire 1 |& p $end
+$var wire 1 w& set $end
+$var wire 1 C' result $end
+$var wire 1 &' cout $end
+$var wire 1 *' cin $end
+$var wire 1 D' bmux $end
+$scope module bmux2to1 $end
+$var wire 1 @' a $end
+$var wire 1 E' b $end
+$var wire 1 F' s $end
+$var wire 1 D' out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 "' a $end
+$var wire 1 |& b $end
+$var wire 1 A' d $end
+$var wire 1 G' s0 $end
+$var wire 1 H' s1 $end
+$var wire 1 C' out $end
+$var wire 1 w& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 ?' a $end
+$var wire 1 D' b $end
+$var wire 1 &' cout $end
+$var wire 1 w& sum $end
+$var wire 1 *' cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 I' a $end
+$var wire 1 J' b $end
+$var wire 1 !' g $end
+$var wire 1 K' less $end
+$var wire 3 L' op [2:0] $end
+$var wire 1 {& p $end
+$var wire 1 v& set $end
+$var wire 1 M' result $end
+$var wire 1 %' cout $end
+$var wire 1 )' cin $end
+$var wire 1 N' bmux $end
+$scope module bmux2to1 $end
+$var wire 1 J' a $end
+$var wire 1 O' b $end
+$var wire 1 P' s $end
+$var wire 1 N' out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 !' a $end
+$var wire 1 {& b $end
+$var wire 1 K' d $end
+$var wire 1 Q' s0 $end
+$var wire 1 R' s1 $end
+$var wire 1 M' out $end
+$var wire 1 v& c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 I' a $end
+$var wire 1 N' b $end
+$var wire 1 %' cout $end
+$var wire 1 v& sum $end
+$var wire 1 )' cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 +' C1 $end
+$var wire 1 *' C2 $end
+$var wire 1 )' C3 $end
+$var wire 1 [$ C4 $end
+$var wire 1 d$ G $end
+$var wire 1 `$ P $end
+$var wire 1 S' cin $end
+$var wire 1 $' g0 $end
+$var wire 1 #' g1 $end
+$var wire 1 "' g2 $end
+$var wire 1 !' g3 $end
+$var wire 1 ~& p0 $end
+$var wire 1 }& p1 $end
+$var wire 1 |& p2 $end
+$var wire 1 {& p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 )' cin $end
+$var wire 1 [$ cout $end
+$var wire 1 V v $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module ID_ $end
+$var wire 1 T' Clk $end
+$var wire 32 U' In_IR [31:0] $end
+$var wire 5 V' In_Rd [4:0] $end
+$var wire 1 . In_RegWrite $end
+$var wire 32 W' In_WriteData [31:0] $end
+$var wire 1 X' OutJump $end
+$var wire 1 6 OutPCSrc $end
+$var wire 1 Y' RegWrite $end
+$var wire 2 Z' WBControl [1:0] $end
+$var wire 32 [' SE [31:0] $end
+$var wire 1 \' RegDst $end
+$var wire 32 ]' OutJumpPC [31:0] $end
+$var wire 32 ^' OutBranchPC [31:0] $end
+$var wire 1 _' MemWrite $end
+$var wire 1 `' MemToReg $end
+$var wire 1 a' MemRead $end
+$var wire 2 b' MEMControl [1:0] $end
+$var wire 1 c' Jump $end
+$var wire 32 d' In_PC [31:0] $end
+$var wire 3 e' Funct [2:0] $end
+$var wire 4 f' EXControl [3:0] $end
+$var wire 32 g' DataBTmp [31:0] $end
+$var wire 32 h' DataATmp [31:0] $end
+$var wire 1 i' Bne $end
+$var wire 1 j' Beq $end
+$var wire 1 k' ALUSrc $end
+$var wire 2 l' ALUOp [1:0] $end
+$var reg 32 m' OutDataA [31:0] $end
+$var reg 32 n' OutDataB [31:0] $end
+$var reg 4 o' OutEXControl [3:0] $end
+$var reg 3 p' OutFunct [2:0] $end
+$var reg 2 q' OutMEMControl [1:0] $end
+$var reg 5 r' OutRd [4:0] $end
+$var reg 5 s' OutRs [4:0] $end
+$var reg 5 t' OutRt [4:0] $end
+$var reg 32 u' OutSE [31:0] $end
+$var reg 2 v' OutWBControl [1:0] $end
+$scope module Ctrl $end
+$var wire 6 w' Funct [5:0] $end
+$var wire 6 x' opcode [5:0] $end
+$var reg 3 y' ALUControl [2:0] $end
+$var reg 2 z' ALUop [1:0] $end
+$var reg 1 {' ALUsrc $end
+$var reg 1 a' Beq $end
+$var reg 1 j' Bne $end
+$var reg 1 i' Jump $end
+$var reg 1 _' MemRead $end
+$var reg 1 c' MemToReg $end
+$var reg 1 \' MemWrite $end
+$var reg 1 |' RFormat $end
+$var reg 1 }' RegDst $end
+$var reg 1 `' RegWrite $end
+$var reg 1 ~' beq $end
+$var reg 1 !( bne $end
+$var reg 1 "( jmp $end
+$var reg 1 #( lw $end
+$var reg 1 $( sw $end
+$upscope $end
+$scope module Reg $end
+$var wire 1 T' Clk $end
+$var wire 32 %( ReadData1 [31:0] $end
+$var wire 32 &( ReadData2 [31:0] $end
+$var wire 5 '( ReadRegister1 [4:0] $end
+$var wire 5 (( ReadRegister2 [4:0] $end
+$var wire 1 . RegWrite $end
+$var wire 32 )( WriteData [31:0] $end
+$var wire 5 *( WriteRegister [4:0] $end
+$upscope $end
+$scope module Sign $end
+$var wire 16 +( a [15:0] $end
+$var reg 32 ,( result [31:0] $end
+$upscope $end
+$upscope $end
+$scope module IF_ $end
+$var wire 1 # Clk $end
+$var wire 32 -( Instr [31:0] $end
+$var wire 32 .( PC [31:0] $end
+$var wire 32 /( OutPC [31:0] $end
+$scope module IM $end
+$var wire 1 0( Clk $end
+$var wire 32 1( PC [31:0] $end
+$var reg 32 2( Instr [31:0] $end
+$upscope $end
+$upscope $end
+$scope module MEM_ $end
+$var wire 32 3( Address [31:0] $end
+$var wire 1 4( Clk $end
+$var wire 32 5( Data [31:0] $end
+$var wire 2 6( MEMControl [1:0] $end
+$var wire 2 7( WBControl [1:0] $end
+$var wire 32 8( DataTemp [31:0] $end
+$var wire 7 9( AddressTemp [6:0] $end
+$var reg 32 :( AddressOut [31:0] $end
+$var reg 32 ;( DataOut [31:0] $end
+$var reg 2 <( WBControlOut [1:0] $end
+$scope module DMEM $end
+$var wire 7 =( Address [6:0] $end
+$var wire 1 4( Clk $end
+$var wire 1 >( MemRead $end
+$var wire 1 ?( MemWrite $end
+$var wire 32 @( WriteData [31:0] $end
+$var reg 32 A( ReadData [31:0] $end
+$upscope $end
+$upscope $end
+$scope module WB_ $end
+$var wire 32 B( Address_In [31:0] $end
+$var wire 1 C( Clk $end
+$var wire 32 D( Data_In [31:0] $end
+$var wire 2 E( WBControl_In [1:0] $end
+$var wire 1 F( RegWrite $end
+$var reg 32 G( Data_Out [31:0] $end
+$var reg 1 H( RegWrite_Out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module EX_tb $end
+$scope module test $end
+$var wire 1 I( Clk $end
+$var wire 32 J( DataAIn [31:0] $end
+$var wire 32 K( DataBIn [31:0] $end
+$var wire 4 L( EXControlIn [3:0] $end
+$var wire 3 M( FunctIn [2:0] $end
+$var wire 2 N( MEMControlIn [1:0] $end
+$var wire 5 O( RdIn [4:0] $end
+$var wire 5 P( RtIn [4:0] $end
+$var wire 32 Q( SEIn [31:0] $end
+$var wire 2 R( WBControlIn [1:0] $end
+$var wire 1 S( zero $end
+$var wire 1 T( set $end
+$var wire 32 U( result [31:0] $end
+$var wire 1 V( overflow $end
+$var reg 32 W( DataB [31:0] $end
+$var reg 32 X( DataOut [31:0] $end
+$var reg 2 Y( MEMControlOut [1:0] $end
+$var reg 5 Z( RdOut [4:0] $end
+$var reg 32 [( ResultOut [31:0] $end
+$var reg 2 \( WBControlOut [1:0] $end
+$scope module ALU $end
+$var wire 32 ]( a [31:0] $end
+$var wire 32 ^( b [31:0] $end
+$var wire 1 _( null_wire $end
+$var wire 3 `( op [2:0] $end
+$var wire 1 V( overflow $end
+$var wire 1 a( overflow0 $end
+$var wire 1 b( overflow1 $end
+$var wire 1 T( set $end
+$var wire 1 S( zero $end
+$var wire 1 c( zero1 $end
+$var wire 1 d( zero0 $end
+$var wire 1 e( setwire $end
+$var wire 32 f( result [31:0] $end
+$var wire 1 g( cin1 $end
+$scope module alu0 $end
+$var wire 1 _( G $end
+$var wire 1 _( P $end
+$var wire 16 h( a [15:0] $end
+$var wire 16 i( b [15:0] $end
+$var wire 1 j( cin $end
+$var wire 1 k( null_cout $end
+$var wire 1 l( null_set $end
+$var wire 3 m( op [2:0] $end
+$var wire 1 a( overflow $end
+$var wire 1 _( set $end
+$var wire 1 d( zero $end
+$var wire 4 n( zeros [3:0] $end
+$var wire 16 o( result [15:0] $end
+$var wire 1 p( p3 $end
+$var wire 1 q( p2 $end
+$var wire 1 r( p1 $end
+$var wire 1 s( p0 $end
+$var wire 1 e( less $end
+$var wire 1 t( g3 $end
+$var wire 1 u( g2 $end
+$var wire 1 v( g1 $end
+$var wire 1 w( g0 $end
+$var wire 1 g( cout $end
+$var wire 1 x( C3 $end
+$var wire 1 y( C2 $end
+$var wire 1 z( C1 $end
+$scope module CLA1 $end
+$var wire 1 z( C1 $end
+$var wire 1 y( C2 $end
+$var wire 1 x( C3 $end
+$var wire 1 g( C4 $end
+$var wire 1 _( G $end
+$var wire 1 _( P $end
+$var wire 1 j( cin $end
+$var wire 1 p( p3 $end
+$var wire 1 q( p2 $end
+$var wire 1 r( p1 $end
+$var wire 1 s( p0 $end
+$var wire 1 t( g3 $end
+$var wire 1 u( g2 $end
+$var wire 1 v( g1 $end
+$var wire 1 w( g0 $end
+$upscope $end
+$scope module alu_0 $end
+$var wire 4 {( a [3:0] $end
+$var wire 4 |( b [3:0] $end
+$var wire 1 j( cin $end
+$var wire 1 k( cout $end
+$var wire 3 }( op [2:0] $end
+$var wire 1 a( overflow $end
+$var wire 1 l( set $end
+$var wire 1 ~( zero $end
+$var wire 1 !) set3 $end
+$var wire 1 ") set2 $end
+$var wire 1 #) set1 $end
+$var wire 1 $) set0 $end
+$var wire 4 %) result [3:0] $end
+$var wire 1 &) p3 $end
+$var wire 1 ') p2 $end
+$var wire 1 () p1 $end
+$var wire 1 )) p0 $end
+$var wire 1 e( less $end
+$var wire 1 *) g3 $end
+$var wire 1 +) g2 $end
+$var wire 1 ,) g1 $end
+$var wire 1 -) g0 $end
+$var wire 1 .) cout3 $end
+$var wire 1 /) cout2 $end
+$var wire 1 0) cout1 $end
+$var wire 1 1) cout0 $end
+$var wire 1 s( P $end
+$var wire 1 w( G $end
+$var wire 1 2) C3 $end
+$var wire 1 3) C2 $end
+$var wire 1 4) C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 5) a $end
+$var wire 1 6) b $end
+$var wire 1 j( cin $end
+$var wire 1 -) g $end
+$var wire 3 7) op [2:0] $end
+$var wire 1 )) p $end
+$var wire 1 $) set $end
+$var wire 1 8) result $end
+$var wire 1 e( less $end
+$var wire 1 1) cout $end
+$var wire 1 9) bmux $end
+$scope module bmux2to1 $end
+$var wire 1 6) a $end
+$var wire 1 :) b $end
+$var wire 1 ;) s $end
+$var wire 1 9) out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 -) a $end
+$var wire 1 )) b $end
+$var wire 1 <) s0 $end
+$var wire 1 =) s1 $end
+$var wire 1 8) out $end
+$var wire 1 e( d $end
+$var wire 1 $) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 5) a $end
+$var wire 1 9) b $end
+$var wire 1 j( cin $end
+$var wire 1 1) cout $end
+$var wire 1 $) sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 >) a $end
+$var wire 1 ?) b $end
+$var wire 1 ,) g $end
+$var wire 1 @) less $end
+$var wire 3 A) op [2:0] $end
+$var wire 1 () p $end
+$var wire 1 #) set $end
+$var wire 1 B) result $end
+$var wire 1 0) cout $end
+$var wire 1 4) cin $end
+$var wire 1 C) bmux $end
+$scope module bmux2to1 $end
+$var wire 1 ?) a $end
+$var wire 1 D) b $end
+$var wire 1 E) s $end
+$var wire 1 C) out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ,) a $end
+$var wire 1 () b $end
+$var wire 1 @) d $end
+$var wire 1 F) s0 $end
+$var wire 1 G) s1 $end
+$var wire 1 B) out $end
+$var wire 1 #) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 >) a $end
+$var wire 1 C) b $end
+$var wire 1 0) cout $end
+$var wire 1 #) sum $end
+$var wire 1 4) cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 H) a $end
+$var wire 1 I) b $end
+$var wire 1 +) g $end
+$var wire 1 J) less $end
+$var wire 3 K) op [2:0] $end
+$var wire 1 ') p $end
+$var wire 1 ") set $end
+$var wire 1 L) result $end
+$var wire 1 /) cout $end
+$var wire 1 3) cin $end
+$var wire 1 M) bmux $end
+$scope module bmux2to1 $end
+$var wire 1 I) a $end
+$var wire 1 N) b $end
+$var wire 1 O) s $end
+$var wire 1 M) out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 +) a $end
+$var wire 1 ') b $end
+$var wire 1 J) d $end
+$var wire 1 P) s0 $end
+$var wire 1 Q) s1 $end
+$var wire 1 L) out $end
+$var wire 1 ") c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 H) a $end
+$var wire 1 M) b $end
+$var wire 1 /) cout $end
+$var wire 1 ") sum $end
+$var wire 1 3) cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 R) a $end
+$var wire 1 S) b $end
+$var wire 1 *) g $end
+$var wire 1 T) less $end
+$var wire 3 U) op [2:0] $end
+$var wire 1 &) p $end
+$var wire 1 !) set $end
+$var wire 1 V) result $end
+$var wire 1 .) cout $end
+$var wire 1 2) cin $end
+$var wire 1 W) bmux $end
+$scope module bmux2to1 $end
+$var wire 1 S) a $end
+$var wire 1 X) b $end
+$var wire 1 Y) s $end
+$var wire 1 W) out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 *) a $end
+$var wire 1 &) b $end
+$var wire 1 T) d $end
+$var wire 1 Z) s0 $end
+$var wire 1 [) s1 $end
+$var wire 1 V) out $end
+$var wire 1 !) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 R) a $end
+$var wire 1 W) b $end
+$var wire 1 .) cout $end
+$var wire 1 !) sum $end
+$var wire 1 2) cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 4) C1 $end
+$var wire 1 3) C2 $end
+$var wire 1 2) C3 $end
+$var wire 1 k( C4 $end
+$var wire 1 w( G $end
+$var wire 1 s( P $end
+$var wire 1 \) cin $end
+$var wire 1 -) g0 $end
+$var wire 1 ,) g1 $end
+$var wire 1 +) g2 $end
+$var wire 1 *) g3 $end
+$var wire 1 )) p0 $end
+$var wire 1 () p1 $end
+$var wire 1 ') p2 $end
+$var wire 1 &) p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 2) cin $end
+$var wire 1 k( cout $end
+$var wire 1 a( v $end
+$upscope $end
+$upscope $end
+$scope module alu_1 $end
+$var wire 4 ]) a [3:0] $end
+$var wire 4 ^) b [3:0] $end
+$var wire 1 z( cin $end
+$var wire 1 k( cout $end
+$var wire 1 _) less $end
+$var wire 3 `) op [2:0] $end
+$var wire 1 a( overflow $end
+$var wire 1 l( set $end
+$var wire 1 a) zero $end
+$var wire 1 b) set3 $end
+$var wire 1 c) set2 $end
+$var wire 1 d) set1 $end
+$var wire 1 e) set0 $end
+$var wire 4 f) result [3:0] $end
+$var wire 1 g) p3 $end
+$var wire 1 h) p2 $end
+$var wire 1 i) p1 $end
+$var wire 1 j) p0 $end
+$var wire 1 k) g3 $end
+$var wire 1 l) g2 $end
+$var wire 1 m) g1 $end
+$var wire 1 n) g0 $end
+$var wire 1 o) cout3 $end
+$var wire 1 p) cout2 $end
+$var wire 1 q) cout1 $end
+$var wire 1 r) cout0 $end
+$var wire 1 r( P $end
+$var wire 1 v( G $end
+$var wire 1 s) C3 $end
+$var wire 1 t) C2 $end
+$var wire 1 u) C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 v) a $end
+$var wire 1 w) b $end
+$var wire 1 z( cin $end
+$var wire 1 n) g $end
+$var wire 1 _) less $end
+$var wire 3 x) op [2:0] $end
+$var wire 1 j) p $end
+$var wire 1 e) set $end
+$var wire 1 y) result $end
+$var wire 1 r) cout $end
+$var wire 1 z) bmux $end
+$scope module bmux2to1 $end
+$var wire 1 w) a $end
+$var wire 1 {) b $end
+$var wire 1 |) s $end
+$var wire 1 z) out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 n) a $end
+$var wire 1 j) b $end
+$var wire 1 _) d $end
+$var wire 1 }) s0 $end
+$var wire 1 ~) s1 $end
+$var wire 1 y) out $end
+$var wire 1 e) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 v) a $end
+$var wire 1 z) b $end
+$var wire 1 z( cin $end
+$var wire 1 r) cout $end
+$var wire 1 e) sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 !* a $end
+$var wire 1 "* b $end
+$var wire 1 m) g $end
+$var wire 1 #* less $end
+$var wire 3 $* op [2:0] $end
+$var wire 1 i) p $end
+$var wire 1 d) set $end
+$var wire 1 %* result $end
+$var wire 1 q) cout $end
+$var wire 1 u) cin $end
+$var wire 1 &* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 "* a $end
+$var wire 1 '* b $end
+$var wire 1 (* s $end
+$var wire 1 &* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 m) a $end
+$var wire 1 i) b $end
+$var wire 1 #* d $end
+$var wire 1 )* s0 $end
+$var wire 1 ** s1 $end
+$var wire 1 %* out $end
+$var wire 1 d) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 !* a $end
+$var wire 1 &* b $end
+$var wire 1 q) cout $end
+$var wire 1 d) sum $end
+$var wire 1 u) cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 +* a $end
+$var wire 1 ,* b $end
+$var wire 1 l) g $end
+$var wire 1 -* less $end
+$var wire 3 .* op [2:0] $end
+$var wire 1 h) p $end
+$var wire 1 c) set $end
+$var wire 1 /* result $end
+$var wire 1 p) cout $end
+$var wire 1 t) cin $end
+$var wire 1 0* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 ,* a $end
+$var wire 1 1* b $end
+$var wire 1 2* s $end
+$var wire 1 0* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 l) a $end
+$var wire 1 h) b $end
+$var wire 1 -* d $end
+$var wire 1 3* s0 $end
+$var wire 1 4* s1 $end
+$var wire 1 /* out $end
+$var wire 1 c) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 +* a $end
+$var wire 1 0* b $end
+$var wire 1 p) cout $end
+$var wire 1 c) sum $end
+$var wire 1 t) cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 5* a $end
+$var wire 1 6* b $end
+$var wire 1 k) g $end
+$var wire 1 7* less $end
+$var wire 3 8* op [2:0] $end
+$var wire 1 g) p $end
+$var wire 1 b) set $end
+$var wire 1 9* result $end
+$var wire 1 o) cout $end
+$var wire 1 s) cin $end
+$var wire 1 :* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 6* a $end
+$var wire 1 ;* b $end
+$var wire 1 <* s $end
+$var wire 1 :* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 k) a $end
+$var wire 1 g) b $end
+$var wire 1 7* d $end
+$var wire 1 =* s0 $end
+$var wire 1 >* s1 $end
+$var wire 1 9* out $end
+$var wire 1 b) c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 5* a $end
+$var wire 1 :* b $end
+$var wire 1 o) cout $end
+$var wire 1 b) sum $end
+$var wire 1 s) cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 u) C1 $end
+$var wire 1 t) C2 $end
+$var wire 1 s) C3 $end
+$var wire 1 k( C4 $end
+$var wire 1 v( G $end
+$var wire 1 r( P $end
+$var wire 1 ?* cin $end
+$var wire 1 n) g0 $end
+$var wire 1 m) g1 $end
+$var wire 1 l) g2 $end
+$var wire 1 k) g3 $end
+$var wire 1 j) p0 $end
+$var wire 1 i) p1 $end
+$var wire 1 h) p2 $end
+$var wire 1 g) p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 s) cin $end
+$var wire 1 k( cout $end
+$var wire 1 a( v $end
+$upscope $end
+$upscope $end
+$scope module alu_2 $end
+$var wire 4 @* a [3:0] $end
+$var wire 4 A* b [3:0] $end
+$var wire 1 y( cin $end
+$var wire 1 k( cout $end
+$var wire 1 B* less $end
+$var wire 3 C* op [2:0] $end
+$var wire 1 a( overflow $end
+$var wire 1 l( set $end
+$var wire 1 D* zero $end
+$var wire 1 E* set3 $end
+$var wire 1 F* set2 $end
+$var wire 1 G* set1 $end
+$var wire 1 H* set0 $end
+$var wire 4 I* result [3:0] $end
+$var wire 1 J* p3 $end
+$var wire 1 K* p2 $end
+$var wire 1 L* p1 $end
+$var wire 1 M* p0 $end
+$var wire 1 N* g3 $end
+$var wire 1 O* g2 $end
+$var wire 1 P* g1 $end
+$var wire 1 Q* g0 $end
+$var wire 1 R* cout3 $end
+$var wire 1 S* cout2 $end
+$var wire 1 T* cout1 $end
+$var wire 1 U* cout0 $end
+$var wire 1 q( P $end
+$var wire 1 u( G $end
+$var wire 1 V* C3 $end
+$var wire 1 W* C2 $end
+$var wire 1 X* C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 Y* a $end
+$var wire 1 Z* b $end
+$var wire 1 y( cin $end
+$var wire 1 Q* g $end
+$var wire 1 B* less $end
+$var wire 3 [* op [2:0] $end
+$var wire 1 M* p $end
+$var wire 1 H* set $end
+$var wire 1 \* result $end
+$var wire 1 U* cout $end
+$var wire 1 ]* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 Z* a $end
+$var wire 1 ^* b $end
+$var wire 1 _* s $end
+$var wire 1 ]* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 Q* a $end
+$var wire 1 M* b $end
+$var wire 1 B* d $end
+$var wire 1 `* s0 $end
+$var wire 1 a* s1 $end
+$var wire 1 \* out $end
+$var wire 1 H* c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 Y* a $end
+$var wire 1 ]* b $end
+$var wire 1 y( cin $end
+$var wire 1 U* cout $end
+$var wire 1 H* sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 b* a $end
+$var wire 1 c* b $end
+$var wire 1 P* g $end
+$var wire 1 d* less $end
+$var wire 3 e* op [2:0] $end
+$var wire 1 L* p $end
+$var wire 1 G* set $end
+$var wire 1 f* result $end
+$var wire 1 T* cout $end
+$var wire 1 X* cin $end
+$var wire 1 g* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 c* a $end
+$var wire 1 h* b $end
+$var wire 1 i* s $end
+$var wire 1 g* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 P* a $end
+$var wire 1 L* b $end
+$var wire 1 d* d $end
+$var wire 1 j* s0 $end
+$var wire 1 k* s1 $end
+$var wire 1 f* out $end
+$var wire 1 G* c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 b* a $end
+$var wire 1 g* b $end
+$var wire 1 T* cout $end
+$var wire 1 G* sum $end
+$var wire 1 X* cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 l* a $end
+$var wire 1 m* b $end
+$var wire 1 O* g $end
+$var wire 1 n* less $end
+$var wire 3 o* op [2:0] $end
+$var wire 1 K* p $end
+$var wire 1 F* set $end
+$var wire 1 p* result $end
+$var wire 1 S* cout $end
+$var wire 1 W* cin $end
+$var wire 1 q* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 m* a $end
+$var wire 1 r* b $end
+$var wire 1 s* s $end
+$var wire 1 q* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 O* a $end
+$var wire 1 K* b $end
+$var wire 1 n* d $end
+$var wire 1 t* s0 $end
+$var wire 1 u* s1 $end
+$var wire 1 p* out $end
+$var wire 1 F* c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 l* a $end
+$var wire 1 q* b $end
+$var wire 1 S* cout $end
+$var wire 1 F* sum $end
+$var wire 1 W* cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 v* a $end
+$var wire 1 w* b $end
+$var wire 1 N* g $end
+$var wire 1 x* less $end
+$var wire 3 y* op [2:0] $end
+$var wire 1 J* p $end
+$var wire 1 E* set $end
+$var wire 1 z* result $end
+$var wire 1 R* cout $end
+$var wire 1 V* cin $end
+$var wire 1 {* bmux $end
+$scope module bmux2to1 $end
+$var wire 1 w* a $end
+$var wire 1 |* b $end
+$var wire 1 }* s $end
+$var wire 1 {* out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 N* a $end
+$var wire 1 J* b $end
+$var wire 1 x* d $end
+$var wire 1 ~* s0 $end
+$var wire 1 !+ s1 $end
+$var wire 1 z* out $end
+$var wire 1 E* c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 v* a $end
+$var wire 1 {* b $end
+$var wire 1 R* cout $end
+$var wire 1 E* sum $end
+$var wire 1 V* cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 X* C1 $end
+$var wire 1 W* C2 $end
+$var wire 1 V* C3 $end
+$var wire 1 k( C4 $end
+$var wire 1 u( G $end
+$var wire 1 q( P $end
+$var wire 1 "+ cin $end
+$var wire 1 Q* g0 $end
+$var wire 1 P* g1 $end
+$var wire 1 O* g2 $end
+$var wire 1 N* g3 $end
+$var wire 1 M* p0 $end
+$var wire 1 L* p1 $end
+$var wire 1 K* p2 $end
+$var wire 1 J* p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 V* cin $end
+$var wire 1 k( cout $end
+$var wire 1 a( v $end
+$upscope $end
+$upscope $end
+$scope module alu_3 $end
+$var wire 4 #+ a [3:0] $end
+$var wire 4 $+ b [3:0] $end
+$var wire 1 x( cin $end
+$var wire 1 k( cout $end
+$var wire 1 %+ less $end
+$var wire 3 &+ op [2:0] $end
+$var wire 1 a( overflow $end
+$var wire 1 _( set $end
+$var wire 1 '+ zero $end
+$var wire 1 (+ set3 $end
+$var wire 1 )+ set2 $end
+$var wire 1 *+ set1 $end
+$var wire 1 ++ set0 $end
+$var wire 4 ,+ result [3:0] $end
+$var wire 1 -+ p3 $end
+$var wire 1 .+ p2 $end
+$var wire 1 /+ p1 $end
+$var wire 1 0+ p0 $end
+$var wire 1 1+ g3 $end
+$var wire 1 2+ g2 $end
+$var wire 1 3+ g1 $end
+$var wire 1 4+ g0 $end
+$var wire 1 5+ cout3 $end
+$var wire 1 6+ cout2 $end
+$var wire 1 7+ cout1 $end
+$var wire 1 8+ cout0 $end
+$var wire 1 p( P $end
+$var wire 1 t( G $end
+$var wire 1 9+ C3 $end
+$var wire 1 :+ C2 $end
+$var wire 1 ;+ C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 <+ a $end
+$var wire 1 =+ b $end
+$var wire 1 x( cin $end
+$var wire 1 4+ g $end
+$var wire 1 %+ less $end
+$var wire 3 >+ op [2:0] $end
+$var wire 1 0+ p $end
+$var wire 1 ++ set $end
+$var wire 1 ?+ result $end
+$var wire 1 8+ cout $end
+$var wire 1 @+ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 =+ a $end
+$var wire 1 A+ b $end
+$var wire 1 B+ s $end
+$var wire 1 @+ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 4+ a $end
+$var wire 1 0+ b $end
+$var wire 1 %+ d $end
+$var wire 1 C+ s0 $end
+$var wire 1 D+ s1 $end
+$var wire 1 ?+ out $end
+$var wire 1 ++ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 <+ a $end
+$var wire 1 @+ b $end
+$var wire 1 x( cin $end
+$var wire 1 8+ cout $end
+$var wire 1 ++ sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 E+ a $end
+$var wire 1 F+ b $end
+$var wire 1 3+ g $end
+$var wire 1 G+ less $end
+$var wire 3 H+ op [2:0] $end
+$var wire 1 /+ p $end
+$var wire 1 *+ set $end
+$var wire 1 I+ result $end
+$var wire 1 7+ cout $end
+$var wire 1 ;+ cin $end
+$var wire 1 J+ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 F+ a $end
+$var wire 1 K+ b $end
+$var wire 1 L+ s $end
+$var wire 1 J+ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 3+ a $end
+$var wire 1 /+ b $end
+$var wire 1 G+ d $end
+$var wire 1 M+ s0 $end
+$var wire 1 N+ s1 $end
+$var wire 1 I+ out $end
+$var wire 1 *+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 E+ a $end
+$var wire 1 J+ b $end
+$var wire 1 7+ cout $end
+$var wire 1 *+ sum $end
+$var wire 1 ;+ cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 O+ a $end
+$var wire 1 P+ b $end
+$var wire 1 2+ g $end
+$var wire 1 Q+ less $end
+$var wire 3 R+ op [2:0] $end
+$var wire 1 .+ p $end
+$var wire 1 )+ set $end
+$var wire 1 S+ result $end
+$var wire 1 6+ cout $end
+$var wire 1 :+ cin $end
+$var wire 1 T+ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 P+ a $end
+$var wire 1 U+ b $end
+$var wire 1 V+ s $end
+$var wire 1 T+ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 2+ a $end
+$var wire 1 .+ b $end
+$var wire 1 Q+ d $end
+$var wire 1 W+ s0 $end
+$var wire 1 X+ s1 $end
+$var wire 1 S+ out $end
+$var wire 1 )+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 O+ a $end
+$var wire 1 T+ b $end
+$var wire 1 6+ cout $end
+$var wire 1 )+ sum $end
+$var wire 1 :+ cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 Y+ a $end
+$var wire 1 Z+ b $end
+$var wire 1 1+ g $end
+$var wire 1 [+ less $end
+$var wire 3 \+ op [2:0] $end
+$var wire 1 -+ p $end
+$var wire 1 (+ set $end
+$var wire 1 ]+ result $end
+$var wire 1 5+ cout $end
+$var wire 1 9+ cin $end
+$var wire 1 ^+ bmux $end
+$scope module bmux2to1 $end
+$var wire 1 Z+ a $end
+$var wire 1 _+ b $end
+$var wire 1 `+ s $end
+$var wire 1 ^+ out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 1+ a $end
+$var wire 1 -+ b $end
+$var wire 1 [+ d $end
+$var wire 1 a+ s0 $end
+$var wire 1 b+ s1 $end
+$var wire 1 ]+ out $end
+$var wire 1 (+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 Y+ a $end
+$var wire 1 ^+ b $end
+$var wire 1 5+ cout $end
+$var wire 1 (+ sum $end
+$var wire 1 9+ cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 ;+ C1 $end
+$var wire 1 :+ C2 $end
+$var wire 1 9+ C3 $end
+$var wire 1 k( C4 $end
+$var wire 1 t( G $end
+$var wire 1 p( P $end
+$var wire 1 c+ cin $end
+$var wire 1 4+ g0 $end
+$var wire 1 3+ g1 $end
+$var wire 1 2+ g2 $end
+$var wire 1 1+ g3 $end
+$var wire 1 0+ p0 $end
+$var wire 1 /+ p1 $end
+$var wire 1 .+ p2 $end
+$var wire 1 -+ p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 9+ cin $end
+$var wire 1 k( cout $end
+$var wire 1 a( v $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module alu1 $end
+$var wire 1 _( G $end
+$var wire 1 _( P $end
+$var wire 16 d+ a [15:0] $end
+$var wire 16 e+ b [15:0] $end
+$var wire 1 g( cin $end
+$var wire 1 _( cout $end
+$var wire 1 f+ less $end
+$var wire 1 g+ null_cout $end
+$var wire 1 h+ null_set $end
+$var wire 3 i+ op [2:0] $end
+$var wire 1 b( overflow $end
+$var wire 1 c( zero $end
+$var wire 4 j+ zeros [3:0] $end
+$var wire 1 e( set $end
+$var wire 16 k+ result [15:0] $end
+$var wire 1 l+ p3 $end
+$var wire 1 m+ p2 $end
+$var wire 1 n+ p1 $end
+$var wire 1 o+ p0 $end
+$var wire 1 p+ g3 $end
+$var wire 1 q+ g2 $end
+$var wire 1 r+ g1 $end
+$var wire 1 s+ g0 $end
+$var wire 1 t+ C3 $end
+$var wire 1 u+ C2 $end
+$var wire 1 v+ C1 $end
+$scope module CLA1 $end
+$var wire 1 v+ C1 $end
+$var wire 1 u+ C2 $end
+$var wire 1 t+ C3 $end
+$var wire 1 _( C4 $end
+$var wire 1 _( G $end
+$var wire 1 _( P $end
+$var wire 1 g( cin $end
+$var wire 1 l+ p3 $end
+$var wire 1 m+ p2 $end
+$var wire 1 n+ p1 $end
+$var wire 1 o+ p0 $end
+$var wire 1 p+ g3 $end
+$var wire 1 q+ g2 $end
+$var wire 1 r+ g1 $end
+$var wire 1 s+ g0 $end
+$upscope $end
+$scope module alu_0 $end
+$var wire 4 w+ a [3:0] $end
+$var wire 4 x+ b [3:0] $end
+$var wire 1 g( cin $end
+$var wire 1 g+ cout $end
+$var wire 1 f+ less $end
+$var wire 3 y+ op [2:0] $end
+$var wire 1 b( overflow $end
+$var wire 1 h+ set $end
+$var wire 1 z+ zero $end
+$var wire 1 {+ set3 $end
+$var wire 1 |+ set2 $end
+$var wire 1 }+ set1 $end
+$var wire 1 ~+ set0 $end
+$var wire 4 !, result [3:0] $end
+$var wire 1 ", p3 $end
+$var wire 1 #, p2 $end
+$var wire 1 $, p1 $end
+$var wire 1 %, p0 $end
+$var wire 1 &, g3 $end
+$var wire 1 ', g2 $end
+$var wire 1 (, g1 $end
+$var wire 1 ), g0 $end
+$var wire 1 *, cout3 $end
+$var wire 1 +, cout2 $end
+$var wire 1 ,, cout1 $end
+$var wire 1 -, cout0 $end
+$var wire 1 o+ P $end
+$var wire 1 s+ G $end
+$var wire 1 ., C3 $end
+$var wire 1 /, C2 $end
+$var wire 1 0, C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 1, a $end
+$var wire 1 2, b $end
+$var wire 1 g( cin $end
+$var wire 1 ), g $end
+$var wire 1 f+ less $end
+$var wire 3 3, op [2:0] $end
+$var wire 1 %, p $end
+$var wire 1 ~+ set $end
+$var wire 1 4, result $end
+$var wire 1 -, cout $end
+$var wire 1 5, bmux $end
+$scope module bmux2to1 $end
+$var wire 1 2, a $end
+$var wire 1 6, b $end
+$var wire 1 7, s $end
+$var wire 1 5, out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ), a $end
+$var wire 1 %, b $end
+$var wire 1 f+ d $end
+$var wire 1 8, s0 $end
+$var wire 1 9, s1 $end
+$var wire 1 4, out $end
+$var wire 1 ~+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 1, a $end
+$var wire 1 5, b $end
+$var wire 1 g( cin $end
+$var wire 1 -, cout $end
+$var wire 1 ~+ sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 :, a $end
+$var wire 1 ;, b $end
+$var wire 1 (, g $end
+$var wire 1 <, less $end
+$var wire 3 =, op [2:0] $end
+$var wire 1 $, p $end
+$var wire 1 }+ set $end
+$var wire 1 >, result $end
+$var wire 1 ,, cout $end
+$var wire 1 0, cin $end
+$var wire 1 ?, bmux $end
+$scope module bmux2to1 $end
+$var wire 1 ;, a $end
+$var wire 1 @, b $end
+$var wire 1 A, s $end
+$var wire 1 ?, out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 (, a $end
+$var wire 1 $, b $end
+$var wire 1 <, d $end
+$var wire 1 B, s0 $end
+$var wire 1 C, s1 $end
+$var wire 1 >, out $end
+$var wire 1 }+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 :, a $end
+$var wire 1 ?, b $end
+$var wire 1 ,, cout $end
+$var wire 1 }+ sum $end
+$var wire 1 0, cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 D, a $end
+$var wire 1 E, b $end
+$var wire 1 ', g $end
+$var wire 1 F, less $end
+$var wire 3 G, op [2:0] $end
+$var wire 1 #, p $end
+$var wire 1 |+ set $end
+$var wire 1 H, result $end
+$var wire 1 +, cout $end
+$var wire 1 /, cin $end
+$var wire 1 I, bmux $end
+$scope module bmux2to1 $end
+$var wire 1 E, a $end
+$var wire 1 J, b $end
+$var wire 1 K, s $end
+$var wire 1 I, out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 ', a $end
+$var wire 1 #, b $end
+$var wire 1 F, d $end
+$var wire 1 L, s0 $end
+$var wire 1 M, s1 $end
+$var wire 1 H, out $end
+$var wire 1 |+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 D, a $end
+$var wire 1 I, b $end
+$var wire 1 +, cout $end
+$var wire 1 |+ sum $end
+$var wire 1 /, cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 N, a $end
+$var wire 1 O, b $end
+$var wire 1 &, g $end
+$var wire 1 P, less $end
+$var wire 3 Q, op [2:0] $end
+$var wire 1 ", p $end
+$var wire 1 {+ set $end
+$var wire 1 R, result $end
+$var wire 1 *, cout $end
+$var wire 1 ., cin $end
+$var wire 1 S, bmux $end
+$scope module bmux2to1 $end
+$var wire 1 O, a $end
+$var wire 1 T, b $end
+$var wire 1 U, s $end
+$var wire 1 S, out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 &, a $end
+$var wire 1 ", b $end
+$var wire 1 P, d $end
+$var wire 1 V, s0 $end
+$var wire 1 W, s1 $end
+$var wire 1 R, out $end
+$var wire 1 {+ c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 N, a $end
+$var wire 1 S, b $end
+$var wire 1 *, cout $end
+$var wire 1 {+ sum $end
+$var wire 1 ., cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 0, C1 $end
+$var wire 1 /, C2 $end
+$var wire 1 ., C3 $end
+$var wire 1 g+ C4 $end
+$var wire 1 s+ G $end
+$var wire 1 o+ P $end
+$var wire 1 X, cin $end
+$var wire 1 ), g0 $end
+$var wire 1 (, g1 $end
+$var wire 1 ', g2 $end
+$var wire 1 &, g3 $end
+$var wire 1 %, p0 $end
+$var wire 1 $, p1 $end
+$var wire 1 #, p2 $end
+$var wire 1 ", p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 ., cin $end
+$var wire 1 g+ cout $end
+$var wire 1 b( v $end
+$upscope $end
+$upscope $end
+$scope module alu_1 $end
+$var wire 4 Y, a [3:0] $end
+$var wire 4 Z, b [3:0] $end
+$var wire 1 v+ cin $end
+$var wire 1 g+ cout $end
+$var wire 1 [, less $end
+$var wire 3 \, op [2:0] $end
+$var wire 1 b( overflow $end
+$var wire 1 h+ set $end
+$var wire 1 ], zero $end
+$var wire 1 ^, set3 $end
+$var wire 1 _, set2 $end
+$var wire 1 `, set1 $end
+$var wire 1 a, set0 $end
+$var wire 4 b, result [3:0] $end
+$var wire 1 c, p3 $end
+$var wire 1 d, p2 $end
+$var wire 1 e, p1 $end
+$var wire 1 f, p0 $end
+$var wire 1 g, g3 $end
+$var wire 1 h, g2 $end
+$var wire 1 i, g1 $end
+$var wire 1 j, g0 $end
+$var wire 1 k, cout3 $end
+$var wire 1 l, cout2 $end
+$var wire 1 m, cout1 $end
+$var wire 1 n, cout0 $end
+$var wire 1 n+ P $end
+$var wire 1 r+ G $end
+$var wire 1 o, C3 $end
+$var wire 1 p, C2 $end
+$var wire 1 q, C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 r, a $end
+$var wire 1 s, b $end
+$var wire 1 v+ cin $end
+$var wire 1 j, g $end
+$var wire 1 [, less $end
+$var wire 3 t, op [2:0] $end
+$var wire 1 f, p $end
+$var wire 1 a, set $end
+$var wire 1 u, result $end
+$var wire 1 n, cout $end
+$var wire 1 v, bmux $end
+$scope module bmux2to1 $end
+$var wire 1 s, a $end
+$var wire 1 w, b $end
+$var wire 1 x, s $end
+$var wire 1 v, out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 j, a $end
+$var wire 1 f, b $end
+$var wire 1 [, d $end
+$var wire 1 y, s0 $end
+$var wire 1 z, s1 $end
+$var wire 1 u, out $end
+$var wire 1 a, c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 r, a $end
+$var wire 1 v, b $end
+$var wire 1 v+ cin $end
+$var wire 1 n, cout $end
+$var wire 1 a, sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 {, a $end
+$var wire 1 |, b $end
+$var wire 1 i, g $end
+$var wire 1 }, less $end
+$var wire 3 ~, op [2:0] $end
+$var wire 1 e, p $end
+$var wire 1 `, set $end
+$var wire 1 !- result $end
+$var wire 1 m, cout $end
+$var wire 1 q, cin $end
+$var wire 1 "- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 |, a $end
+$var wire 1 #- b $end
+$var wire 1 $- s $end
+$var wire 1 "- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 i, a $end
+$var wire 1 e, b $end
+$var wire 1 }, d $end
+$var wire 1 %- s0 $end
+$var wire 1 &- s1 $end
+$var wire 1 !- out $end
+$var wire 1 `, c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 {, a $end
+$var wire 1 "- b $end
+$var wire 1 m, cout $end
+$var wire 1 `, sum $end
+$var wire 1 q, cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 '- a $end
+$var wire 1 (- b $end
+$var wire 1 h, g $end
+$var wire 1 )- less $end
+$var wire 3 *- op [2:0] $end
+$var wire 1 d, p $end
+$var wire 1 _, set $end
+$var wire 1 +- result $end
+$var wire 1 l, cout $end
+$var wire 1 p, cin $end
+$var wire 1 ,- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 (- a $end
+$var wire 1 -- b $end
+$var wire 1 .- s $end
+$var wire 1 ,- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 h, a $end
+$var wire 1 d, b $end
+$var wire 1 )- d $end
+$var wire 1 /- s0 $end
+$var wire 1 0- s1 $end
+$var wire 1 +- out $end
+$var wire 1 _, c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 '- a $end
+$var wire 1 ,- b $end
+$var wire 1 l, cout $end
+$var wire 1 _, sum $end
+$var wire 1 p, cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 1- a $end
+$var wire 1 2- b $end
+$var wire 1 g, g $end
+$var wire 1 3- less $end
+$var wire 3 4- op [2:0] $end
+$var wire 1 c, p $end
+$var wire 1 ^, set $end
+$var wire 1 5- result $end
+$var wire 1 k, cout $end
+$var wire 1 o, cin $end
+$var wire 1 6- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 2- a $end
+$var wire 1 7- b $end
+$var wire 1 8- s $end
+$var wire 1 6- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 g, a $end
+$var wire 1 c, b $end
+$var wire 1 3- d $end
+$var wire 1 9- s0 $end
+$var wire 1 :- s1 $end
+$var wire 1 5- out $end
+$var wire 1 ^, c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 1- a $end
+$var wire 1 6- b $end
+$var wire 1 k, cout $end
+$var wire 1 ^, sum $end
+$var wire 1 o, cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 q, C1 $end
+$var wire 1 p, C2 $end
+$var wire 1 o, C3 $end
+$var wire 1 g+ C4 $end
+$var wire 1 r+ G $end
+$var wire 1 n+ P $end
+$var wire 1 ;- cin $end
+$var wire 1 j, g0 $end
+$var wire 1 i, g1 $end
+$var wire 1 h, g2 $end
+$var wire 1 g, g3 $end
+$var wire 1 f, p0 $end
+$var wire 1 e, p1 $end
+$var wire 1 d, p2 $end
+$var wire 1 c, p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 o, cin $end
+$var wire 1 g+ cout $end
+$var wire 1 b( v $end
+$upscope $end
+$upscope $end
+$scope module alu_2 $end
+$var wire 4 <- a [3:0] $end
+$var wire 4 =- b [3:0] $end
+$var wire 1 u+ cin $end
+$var wire 1 g+ cout $end
+$var wire 1 >- less $end
+$var wire 3 ?- op [2:0] $end
+$var wire 1 b( overflow $end
+$var wire 1 h+ set $end
+$var wire 1 @- zero $end
+$var wire 1 A- set3 $end
+$var wire 1 B- set2 $end
+$var wire 1 C- set1 $end
+$var wire 1 D- set0 $end
+$var wire 4 E- result [3:0] $end
+$var wire 1 F- p3 $end
+$var wire 1 G- p2 $end
+$var wire 1 H- p1 $end
+$var wire 1 I- p0 $end
+$var wire 1 J- g3 $end
+$var wire 1 K- g2 $end
+$var wire 1 L- g1 $end
+$var wire 1 M- g0 $end
+$var wire 1 N- cout3 $end
+$var wire 1 O- cout2 $end
+$var wire 1 P- cout1 $end
+$var wire 1 Q- cout0 $end
+$var wire 1 m+ P $end
+$var wire 1 q+ G $end
+$var wire 1 R- C3 $end
+$var wire 1 S- C2 $end
+$var wire 1 T- C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 U- a $end
+$var wire 1 V- b $end
+$var wire 1 u+ cin $end
+$var wire 1 M- g $end
+$var wire 1 >- less $end
+$var wire 3 W- op [2:0] $end
+$var wire 1 I- p $end
+$var wire 1 D- set $end
+$var wire 1 X- result $end
+$var wire 1 Q- cout $end
+$var wire 1 Y- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 V- a $end
+$var wire 1 Z- b $end
+$var wire 1 [- s $end
+$var wire 1 Y- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 M- a $end
+$var wire 1 I- b $end
+$var wire 1 >- d $end
+$var wire 1 \- s0 $end
+$var wire 1 ]- s1 $end
+$var wire 1 X- out $end
+$var wire 1 D- c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 U- a $end
+$var wire 1 Y- b $end
+$var wire 1 u+ cin $end
+$var wire 1 Q- cout $end
+$var wire 1 D- sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 ^- a $end
+$var wire 1 _- b $end
+$var wire 1 L- g $end
+$var wire 1 `- less $end
+$var wire 3 a- op [2:0] $end
+$var wire 1 H- p $end
+$var wire 1 C- set $end
+$var wire 1 b- result $end
+$var wire 1 P- cout $end
+$var wire 1 T- cin $end
+$var wire 1 c- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 _- a $end
+$var wire 1 d- b $end
+$var wire 1 e- s $end
+$var wire 1 c- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 L- a $end
+$var wire 1 H- b $end
+$var wire 1 `- d $end
+$var wire 1 f- s0 $end
+$var wire 1 g- s1 $end
+$var wire 1 b- out $end
+$var wire 1 C- c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 ^- a $end
+$var wire 1 c- b $end
+$var wire 1 P- cout $end
+$var wire 1 C- sum $end
+$var wire 1 T- cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 h- a $end
+$var wire 1 i- b $end
+$var wire 1 K- g $end
+$var wire 1 j- less $end
+$var wire 3 k- op [2:0] $end
+$var wire 1 G- p $end
+$var wire 1 B- set $end
+$var wire 1 l- result $end
+$var wire 1 O- cout $end
+$var wire 1 S- cin $end
+$var wire 1 m- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 i- a $end
+$var wire 1 n- b $end
+$var wire 1 o- s $end
+$var wire 1 m- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 K- a $end
+$var wire 1 G- b $end
+$var wire 1 j- d $end
+$var wire 1 p- s0 $end
+$var wire 1 q- s1 $end
+$var wire 1 l- out $end
+$var wire 1 B- c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 h- a $end
+$var wire 1 m- b $end
+$var wire 1 O- cout $end
+$var wire 1 B- sum $end
+$var wire 1 S- cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 r- a $end
+$var wire 1 s- b $end
+$var wire 1 J- g $end
+$var wire 1 t- less $end
+$var wire 3 u- op [2:0] $end
+$var wire 1 F- p $end
+$var wire 1 A- set $end
+$var wire 1 v- result $end
+$var wire 1 N- cout $end
+$var wire 1 R- cin $end
+$var wire 1 w- bmux $end
+$scope module bmux2to1 $end
+$var wire 1 s- a $end
+$var wire 1 x- b $end
+$var wire 1 y- s $end
+$var wire 1 w- out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 J- a $end
+$var wire 1 F- b $end
+$var wire 1 t- d $end
+$var wire 1 z- s0 $end
+$var wire 1 {- s1 $end
+$var wire 1 v- out $end
+$var wire 1 A- c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 r- a $end
+$var wire 1 w- b $end
+$var wire 1 N- cout $end
+$var wire 1 A- sum $end
+$var wire 1 R- cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 T- C1 $end
+$var wire 1 S- C2 $end
+$var wire 1 R- C3 $end
+$var wire 1 g+ C4 $end
+$var wire 1 q+ G $end
+$var wire 1 m+ P $end
+$var wire 1 |- cin $end
+$var wire 1 M- g0 $end
+$var wire 1 L- g1 $end
+$var wire 1 K- g2 $end
+$var wire 1 J- g3 $end
+$var wire 1 I- p0 $end
+$var wire 1 H- p1 $end
+$var wire 1 G- p2 $end
+$var wire 1 F- p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 R- cin $end
+$var wire 1 g+ cout $end
+$var wire 1 b( v $end
+$upscope $end
+$upscope $end
+$scope module alu_3 $end
+$var wire 4 }- a [3:0] $end
+$var wire 4 ~- b [3:0] $end
+$var wire 1 t+ cin $end
+$var wire 1 g+ cout $end
+$var wire 1 !. less $end
+$var wire 3 ". op [2:0] $end
+$var wire 1 b( overflow $end
+$var wire 1 #. zero $end
+$var wire 1 $. set3 $end
+$var wire 1 %. set2 $end
+$var wire 1 &. set1 $end
+$var wire 1 '. set0 $end
+$var wire 1 e( set $end
+$var wire 4 (. result [3:0] $end
+$var wire 1 ). p3 $end
+$var wire 1 *. p2 $end
+$var wire 1 +. p1 $end
+$var wire 1 ,. p0 $end
+$var wire 1 -. g3 $end
+$var wire 1 .. g2 $end
+$var wire 1 /. g1 $end
+$var wire 1 0. g0 $end
+$var wire 1 1. cout3 $end
+$var wire 1 2. cout2 $end
+$var wire 1 3. cout1 $end
+$var wire 1 4. cout0 $end
+$var wire 1 l+ P $end
+$var wire 1 p+ G $end
+$var wire 1 5. C3 $end
+$var wire 1 6. C2 $end
+$var wire 1 7. C1 $end
+$scope module alu1bit_0 $end
+$var wire 1 8. a $end
+$var wire 1 9. b $end
+$var wire 1 t+ cin $end
+$var wire 1 0. g $end
+$var wire 1 !. less $end
+$var wire 3 :. op [2:0] $end
+$var wire 1 ,. p $end
+$var wire 1 '. set $end
+$var wire 1 ;. result $end
+$var wire 1 4. cout $end
+$var wire 1 <. bmux $end
+$scope module bmux2to1 $end
+$var wire 1 9. a $end
+$var wire 1 =. b $end
+$var wire 1 >. s $end
+$var wire 1 <. out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 0. a $end
+$var wire 1 ,. b $end
+$var wire 1 !. d $end
+$var wire 1 ?. s0 $end
+$var wire 1 @. s1 $end
+$var wire 1 ;. out $end
+$var wire 1 '. c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 8. a $end
+$var wire 1 <. b $end
+$var wire 1 t+ cin $end
+$var wire 1 4. cout $end
+$var wire 1 '. sum $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_1 $end
+$var wire 1 A. a $end
+$var wire 1 B. b $end
+$var wire 1 /. g $end
+$var wire 1 C. less $end
+$var wire 3 D. op [2:0] $end
+$var wire 1 +. p $end
+$var wire 1 &. set $end
+$var wire 1 E. result $end
+$var wire 1 3. cout $end
+$var wire 1 7. cin $end
+$var wire 1 F. bmux $end
+$scope module bmux2to1 $end
+$var wire 1 B. a $end
+$var wire 1 G. b $end
+$var wire 1 H. s $end
+$var wire 1 F. out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 /. a $end
+$var wire 1 +. b $end
+$var wire 1 C. d $end
+$var wire 1 I. s0 $end
+$var wire 1 J. s1 $end
+$var wire 1 E. out $end
+$var wire 1 &. c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 A. a $end
+$var wire 1 F. b $end
+$var wire 1 3. cout $end
+$var wire 1 &. sum $end
+$var wire 1 7. cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_2 $end
+$var wire 1 K. a $end
+$var wire 1 L. b $end
+$var wire 1 .. g $end
+$var wire 1 M. less $end
+$var wire 3 N. op [2:0] $end
+$var wire 1 *. p $end
+$var wire 1 %. set $end
+$var wire 1 O. result $end
+$var wire 1 2. cout $end
+$var wire 1 6. cin $end
+$var wire 1 P. bmux $end
+$scope module bmux2to1 $end
+$var wire 1 L. a $end
+$var wire 1 Q. b $end
+$var wire 1 R. s $end
+$var wire 1 P. out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 .. a $end
+$var wire 1 *. b $end
+$var wire 1 M. d $end
+$var wire 1 S. s0 $end
+$var wire 1 T. s1 $end
+$var wire 1 O. out $end
+$var wire 1 %. c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 K. a $end
+$var wire 1 P. b $end
+$var wire 1 2. cout $end
+$var wire 1 %. sum $end
+$var wire 1 6. cin $end
+$upscope $end
+$upscope $end
+$scope module alu1bit_3 $end
+$var wire 1 U. a $end
+$var wire 1 V. b $end
+$var wire 1 -. g $end
+$var wire 1 W. less $end
+$var wire 3 X. op [2:0] $end
+$var wire 1 ). p $end
+$var wire 1 $. set $end
+$var wire 1 Y. result $end
+$var wire 1 1. cout $end
+$var wire 1 5. cin $end
+$var wire 1 Z. bmux $end
+$scope module bmux2to1 $end
+$var wire 1 V. a $end
+$var wire 1 [. b $end
+$var wire 1 \. s $end
+$var wire 1 Z. out $end
+$upscope $end
+$scope module resultmux4to1 $end
+$var wire 1 -. a $end
+$var wire 1 ). b $end
+$var wire 1 W. d $end
+$var wire 1 ]. s0 $end
+$var wire 1 ^. s1 $end
+$var wire 1 Y. out $end
+$var wire 1 $. c $end
+$upscope $end
+$scope module sumadder $end
+$var wire 1 U. a $end
+$var wire 1 Z. b $end
+$var wire 1 1. cout $end
+$var wire 1 $. sum $end
+$var wire 1 5. cin $end
+$upscope $end
+$upscope $end
+$scope module cla $end
+$var wire 1 7. C1 $end
+$var wire 1 6. C2 $end
+$var wire 1 5. C3 $end
+$var wire 1 g+ C4 $end
+$var wire 1 p+ G $end
+$var wire 1 l+ P $end
+$var wire 1 _. cin $end
+$var wire 1 0. g0 $end
+$var wire 1 /. g1 $end
+$var wire 1 .. g2 $end
+$var wire 1 -. g3 $end
+$var wire 1 ,. p0 $end
+$var wire 1 +. p1 $end
+$var wire 1 *. p2 $end
+$var wire 1 ). p3 $end
+$upscope $end
+$scope module ovrflw $end
+$var wire 1 5. cin $end
+$var wire 1 g+ cout $end
+$var wire 1 b( v $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module ID_tb $end
+$scope module test $end
+$var wire 1 `. Clk $end
+$var wire 32 a. In_IR [31:0] $end
+$var wire 32 b. In_PC [31:0] $end
+$var wire 5 c. In_Rd [4:0] $end
+$var wire 1 d. In_RegWrite $end
+$var wire 32 e. In_WriteData [31:0] $end
+$var wire 1 f. OutJump $end
+$var wire 1 g. OutPCSrc $end
+$var wire 1 h. RegWrite $end
+$var wire 2 i. WBControl [1:0] $end
+$var wire 32 j. SE [31:0] $end
+$var wire 1 k. RegDst $end
+$var wire 32 l. OutJumpPC [31:0] $end
+$var wire 32 m. OutBranchPC [31:0] $end
+$var wire 1 n. MemWrite $end
+$var wire 1 o. MemToReg $end
+$var wire 1 p. MemRead $end
+$var wire 2 q. MEMControl [1:0] $end
+$var wire 1 r. Jump $end
+$var wire 3 s. Funct [2:0] $end
+$var wire 4 t. EXControl [3:0] $end
+$var wire 32 u. DataBTmp [31:0] $end
+$var wire 32 v. DataATmp [31:0] $end
+$var wire 1 w. Bne $end
+$var wire 1 x. Beq $end
+$var wire 1 y. ALUSrc $end
+$var wire 2 z. ALUOp [1:0] $end
+$var reg 32 {. OutDataA [31:0] $end
+$var reg 32 |. OutDataB [31:0] $end
+$var reg 4 }. OutEXControl [3:0] $end
+$var reg 3 ~. OutFunct [2:0] $end
+$var reg 2 !/ OutMEMControl [1:0] $end
+$var reg 5 "/ OutRd [4:0] $end
+$var reg 5 #/ OutRs [4:0] $end
+$var reg 5 $/ OutRt [4:0] $end
+$var reg 32 %/ OutSE [31:0] $end
+$var reg 2 &/ OutWBControl [1:0] $end
+$scope module Ctrl $end
+$var wire 6 '/ Funct [5:0] $end
+$var wire 6 (/ opcode [5:0] $end
+$var reg 3 )/ ALUControl [2:0] $end
+$var reg 2 */ ALUop [1:0] $end
+$var reg 1 +/ ALUsrc $end
+$var reg 1 p. Beq $end
+$var reg 1 x. Bne $end
+$var reg 1 w. Jump $end
+$var reg 1 n. MemRead $end
+$var reg 1 r. MemToReg $end
+$var reg 1 k. MemWrite $end
+$var reg 1 ,/ RFormat $end
+$var reg 1 -/ RegDst $end
+$var reg 1 o. RegWrite $end
+$var reg 1 ./ beq $end
+$var reg 1 // bne $end
+$var reg 1 0/ jmp $end
+$var reg 1 1/ lw $end
+$var reg 1 2/ sw $end
+$upscope $end
+$scope module Reg $end
+$var wire 1 `. Clk $end
+$var wire 32 3/ ReadData1 [31:0] $end
+$var wire 32 4/ ReadData2 [31:0] $end
+$var wire 5 5/ ReadRegister1 [4:0] $end
+$var wire 5 6/ ReadRegister2 [4:0] $end
+$var wire 1 d. RegWrite $end
+$var wire 32 7/ WriteData [31:0] $end
+$var wire 5 8/ WriteRegister [4:0] $end
+$upscope $end
+$scope module Sign $end
+$var wire 16 9/ a [15:0] $end
+$var reg 32 :/ result [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module IF_tb $end
+$scope module test $end
+$var wire 1 ;/ Clk $end
+$var wire 32 </ PC [31:0] $end
+$var wire 32 =/ OutPC [31:0] $end
+$var wire 32 >/ Instr [31:0] $end
+$scope module IM $end
+$var wire 1 ?/ Clk $end
+$var wire 32 @/ PC [31:0] $end
+$var reg 32 A/ Instr [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module MEMb $end
+$scope module test $end
+$var wire 32 B/ Address [31:0] $end
+$var wire 1 C/ Clk $end
+$var wire 32 D/ Data [31:0] $end
+$var wire 2 E/ MEMControl [1:0] $end
+$var wire 2 F/ WBControl [1:0] $end
+$var wire 32 G/ DataTemp [31:0] $end
+$var wire 7 H/ AddressTemp [6:0] $end
+$var reg 32 I/ AddressOut [31:0] $end
+$var reg 32 J/ DataOut [31:0] $end
+$var reg 2 K/ WBControlOut [1:0] $end
+$scope module DMEM $end
+$var wire 7 L/ Address [6:0] $end
+$var wire 1 C/ Clk $end
+$var wire 1 M/ MemRead $end
+$var wire 1 N/ MemWrite $end
+$var wire 32 O/ WriteData [31:0] $end
+$var reg 32 P/ ReadData [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
 $scope module WBb $end
 $scope module test $end
-$var wire 32 ! Address_In [31:0] $end
-$var wire 1 " Clk $end
-$var wire 32 # Data_In [31:0] $end
-$var wire 2 $ WBControl_In [1:0] $end
-$var wire 1 % RegWrite $end
-$var reg 32 & Data_Out [31:0] $end
-$var reg 1 ' RegWrite_Out $end
+$var wire 32 Q/ Address_In [31:0] $end
+$var wire 1 R/ Clk $end
+$var wire 32 S/ Data_In [31:0] $end
+$var wire 2 T/ WBControl_In [1:0] $end
+$var wire 1 U/ RegWrite $end
+$var reg 32 V/ Data_Out [31:0] $end
+$var reg 1 W/ RegWrite_Out $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-x'
-b10 &
-1%
-b11 $
-b10 #
-1"
-b1 !
+xW/
+b10 V/
+1U/
+b11 T/
+b10 S/
+1R/
+b1 Q/
+bx P/
+b1000 O/
+0N/
+1M/
+b10 L/
+bx K/
+bx J/
+bx I/
+b10 H/
+bx G/
+b0 F/
+b10 E/
+b1000 D/
+1C/
+b10 B/
+bx A/
+b1 @/
+1?/
+bx >/
+b10 =/
+b1 </
+1;/
+b100100000x00000 :/
+b100100000x00000 9/
+b1001 8/
+b1111 7/
+b1000 6/
+b10 5/
+bx 4/
+bx 3/
+02/
+01/
+00/
+0//
+0./
+1-/
+1,/
+0+/
+b10 */
+b1x )/
+b0 (/
+b0z '/
+bx &/
+bx %/
+bx $/
+bx #/
+bx "/
+bx !/
+bx ~.
+bx }.
+bx |.
+bx {.
+b1 z.
+0y.
+0x.
+0w.
+bx v.
+bx u.
+b10 t.
+b1x s.
+0r.
+b0 q.
+0p.
+1o.
+0n.
+bx m.
+b10010000100100000x0000000 l.
+0k.
+b100100000x00000 j.
+b1z i.
+zh.
+0g.
+0f.
+b1111 e.
+0d.
+b1001 c.
+b0 b.
+b10010000100100000x00000 a.
+1`.
+0_.
+0^.
+z].
+0\.
+0[.
+1Z.
+xY.
+b0z X.
+0W.
+1V.
+0U.
+0T.
+zS.
+0R.
+0Q.
+1P.
+xO.
+b0z N.
+0M.
+1L.
+0K.
+0J.
+zI.
+0H.
+0G.
+1F.
+xE.
+b0z D.
+0C.
+1B.
+0A.
+0@.
+z?.
+0>.
+0=.
+1<.
+x;.
+b0z :.
+19.
+08.
+07.
+06.
+05.
+x4.
+03.
+02.
+01.
+00.
+0/.
+0..
+0-.
+1,.
+1+.
+1*.
+1).
+bx (.
+x'.
+1&.
+1%.
+1$.
+x#.
+b0z ".
+0!.
+b1111 ~-
+b0 }-
+0|-
+0{-
+zz-
+0y-
+0x-
+1w-
+xv-
+b0z u-
+0t-
+1s-
+0r-
+0q-
+zp-
+0o-
+0n-
+1m-
+xl-
+b0z k-
+0j-
+1i-
+0h-
+0g-
+zf-
+0e-
+0d-
+1c-
+xb-
+b0z a-
+0`-
+1_-
+0^-
+0]-
+z\-
+0[-
+0Z-
+1Y-
+xX-
+b0z W-
+1V-
+0U-
+0T-
+0S-
+0R-
+xQ-
+0P-
+0O-
+0N-
+0M-
+0L-
+0K-
+0J-
+1I-
+1H-
+1G-
+1F-
+bx E-
+xD-
+1C-
+1B-
+1A-
+x@-
+b0z ?-
+0>-
+b1111 =-
+b0 <-
+0;-
+0:-
+z9-
+08-
+07-
+16-
+x5-
+b0z 4-
+03-
+12-
+01-
+00-
+z/-
+0.-
+0--
+1,-
+x+-
+b0z *-
+0)-
+1(-
+0'-
+0&-
+z%-
+0$-
+0#-
+1"-
+x!-
+b0z ~,
+0},
+1|,
+0{,
+0z,
+zy,
+0x,
+0w,
+1v,
+xu,
+b0z t,
+1s,
+0r,
+0q,
+0p,
+0o,
+xn,
+0m,
+0l,
+0k,
+0j,
+0i,
+0h,
+0g,
+1f,
+1e,
+1d,
+1c,
+bx b,
+xa,
+1`,
+1_,
+1^,
+x],
+b0z \,
+0[,
+b1111 Z,
+b0 Y,
+0X,
+0W,
+zV,
+0U,
+0T,
+1S,
+xR,
+b0z Q,
+0P,
+1O,
+0N,
+0M,
+zL,
+0K,
+0J,
+1I,
+xH,
+b0z G,
+0F,
+1E,
+0D,
+0C,
+zB,
+0A,
+0@,
+1?,
+x>,
+b0z =,
+0<,
+1;,
+0:,
+09,
+z8,
+07,
+06,
+15,
+x4,
+b0z 3,
+12,
+01,
+00,
+0/,
+0.,
+x-,
+0,,
+0+,
+0*,
+0),
+0(,
+0',
+0&,
+1%,
+1$,
+1#,
+1",
+bx !,
+x~+
+1}+
+1|+
+1{+
+xz+
+b0z y+
+b1111 x+
+b0 w+
+xv+
+xu+
+xt+
+0s+
+0r+
+0q+
+0p+
+1o+
+1n+
+1m+
+1l+
+bx k+
+bx j+
+b0z i+
+xh+
+0g+
+0f+
+b1111111111111111 e+
+b0 d+
+0c+
+0b+
+za+
+0`+
+0_+
+1^+
+x]+
+b0z \+
+0[+
+1Z+
+0Y+
+0X+
+zW+
+0V+
+0U+
+1T+
+xS+
+b0z R+
+0Q+
+1P+
+0O+
+0N+
+zM+
+0L+
+0K+
+1J+
+xI+
+b0z H+
+0G+
+1F+
+0E+
+0D+
+zC+
+0B+
+0A+
+1@+
+x?+
+b0z >+
+1=+
+0<+
+0;+
+0:+
+09+
+x8+
+07+
+06+
+05+
+04+
+03+
+02+
+01+
+10+
+1/+
+1.+
+1-+
+bx ,+
+x++
+1*+
+1)+
+1(+
+x'+
+b0z &+
+0%+
+b1111 $+
+b0 #+
+0"+
+0!+
+z~*
+0}*
+0|*
+1{*
+xz*
+b0z y*
+0x*
+1w*
+0v*
+0u*
+zt*
+0s*
+0r*
+1q*
+xp*
+b0z o*
+0n*
+1m*
+0l*
+0k*
+zj*
+0i*
+0h*
+1g*
+xf*
+b0z e*
+0d*
+1c*
+0b*
+0a*
+z`*
+0_*
+0^*
+1]*
+x\*
+b0z [*
+1Z*
+0Y*
+0X*
+0W*
+0V*
+xU*
+0T*
+0S*
+0R*
+0Q*
+0P*
+0O*
+0N*
+1M*
+1L*
+1K*
+1J*
+bx I*
+xH*
+1G*
+1F*
+1E*
+xD*
+b0z C*
+0B*
+b1111 A*
+b0 @*
+0?*
+0>*
+z=*
+0<*
+0;*
+1:*
+x9*
+b0z 8*
+07*
+16*
+05*
+04*
+z3*
+02*
+01*
+10*
+x/*
+b0z .*
+0-*
+1,*
+0+*
+0**
+z)*
+0(*
+0'*
+1&*
+x%*
+b0z $*
+0#*
+1"*
+0!*
+0~)
+z})
+0|)
+0{)
+1z)
+xy)
+b0z x)
+1w)
+0v)
+0u)
+0t)
+0s)
+xr)
+0q)
+0p)
+0o)
+0n)
+0m)
+0l)
+0k)
+1j)
+1i)
+1h)
+1g)
+bx f)
+xe)
+1d)
+1c)
+1b)
+xa)
+b0z `)
+0_)
+b1111 ^)
+b0 ])
+0\)
+0[)
+zZ)
+0Y)
+0X)
+1W)
+xV)
+b0z U)
+0T)
+1S)
+0R)
+0Q)
+zP)
+0O)
+0N)
+1M)
+xL)
+b0z K)
+0J)
+1I)
+0H)
+0G)
+zF)
+0E)
+0D)
+1C)
+xB)
+b0z A)
+0@)
+1?)
+0>)
+0=)
+z<)
+0;)
+0:)
+19)
+x8)
+b0z 7)
+16)
+z5)
+x4)
+x3)
+x2)
+x1)
+x0)
+x/)
+x.)
+x-)
+0,)
+0+)
+0*)
+1))
+1()
+1')
+1&)
+bx %)
+x$)
+x#)
+x")
+x!)
+x~(
+b0z }(
+b1111 |(
+b0z {(
+xz(
+xy(
+xx(
+xw(
+0v(
+0u(
+0t(
+1s(
+1r(
+1q(
+1p(
+bx o(
+bx n(
+b0z m(
+xl(
+xk(
+0j(
+b1111111111111111 i(
+b0z h(
+xg(
+bx f(
+xe(
+xd(
+xc(
+0b(
+xa(
+b0z `(
+x_(
+b11111111111111111111111111111111 ^(
+b0z ](
+bx \(
+bx [(
+b1001 Z(
+bx Y(
+bx X(
+b11111111111111111111111111111111 W(
+0V(
+bx U(
+xT(
+xS(
+b11 R(
+b11111111111111111111111111111111 Q(
+b1000 P(
+b1001 O(
+b0 N(
+b10 M(
+b1101 L(
+b1000 K(
+b100 J(
+1I(
+xH(
+bx G(
+xF(
+bx E(
+bz D(
+zC(
+bx B(
+bx A(
+bx @(
+z?(
+z>(
+bz =(
+bx <(
+bx ;(
+bx :(
+bz 9(
+bx 8(
+bx 7(
+bz 6(
+bx 5(
+x4(
+bz 3(
+bx 2(
+b0x 1(
+00(
+b1 /(
+b0 .(
+bx -(
+bx ,(
+bx +(
+bx *(
+bz )(
+bx ((
+bx '(
+bx &(
+bx %(
+x$(
+x#(
+x"(
+x!(
+x~'
+x}'
+x|'
+x{'
+bx z'
+bx y'
+bx x'
+b0z w'
+bx v'
+bx u'
+bx t'
+bx s'
+bx r'
+bx q'
+bx p'
+bx o'
+bx n'
+bx m'
+b0x l'
+xk'
+xj'
+xi'
+bx h'
+bx g'
+bx0xx f'
+bx e'
+b1 d'
+xc'
+bx b'
+xa'
+x`'
+x_'
+bx ^'
+b0xxxxxxxxxxxxxxxxxxxxxxxx00 ]'
+x\'
+bx ['
+bxz Z'
+zY'
+xX'
+bz W'
+bx V'
+bx U'
+zT'
+0S'
+0R'
+zQ'
+0P'
+1O'
+0N'
+0M'
+b0z L'
+0K'
+0J'
+0I'
+0H'
+zG'
+0F'
+1E'
+0D'
+0C'
+b0z B'
+0A'
+0@'
+0?'
+0>'
+z='
+0<'
+1;'
+0:'
+09'
+b0z 8'
+07'
+06'
+05'
+04'
+z3'
+02'
+11'
+00'
+0/'
+b0z .'
+0-'
+0,'
+0+'
+0*'
+0)'
+0('
+0''
+0&'
+0%'
+0$'
+0#'
+0"'
+0!'
+0~&
+0}&
+0|&
+0{&
+b0 z&
+0y&
+0x&
+0w&
+0v&
+1u&
+b0z t&
+0s&
+b0 r&
+b0 q&
+0p&
+0o&
+zn&
+0m&
+1l&
+0k&
+0j&
+b0z i&
+0h&
+0g&
+0f&
+0e&
+zd&
+0c&
+1b&
+0a&
+0`&
+b0z _&
+0^&
+0]&
+0\&
+0[&
+zZ&
+0Y&
+1X&
+0W&
+0V&
+b0z U&
+0T&
+0S&
+0R&
+0Q&
+zP&
+0O&
+1N&
+0M&
+0L&
+b0z K&
+0J&
+0I&
+0H&
+0G&
+0F&
+0E&
+0D&
+0C&
+0B&
+0A&
+0@&
+0?&
+0>&
+0=&
+0<&
+0;&
+0:&
+b0 9&
+08&
+07&
+06&
+05&
+14&
+b0z 3&
+02&
+b0 1&
+b0 0&
+0/&
+0.&
+z-&
+0,&
+1+&
+0*&
+0)&
+b0z (&
+0'&
+0&&
+0%&
+0$&
+z#&
+0"&
+1!&
+0~%
+0}%
+b0z |%
+0{%
+0z%
+0y%
+0x%
+zw%
+0v%
+1u%
+0t%
+0s%
+b0z r%
+0q%
+0p%
+0o%
+0n%
+zm%
+0l%
+1k%
+0j%
+0i%
+b0z h%
+0g%
+0f%
+0e%
+0d%
+0c%
+0b%
+0a%
+0`%
+0_%
+0^%
+0]%
+0\%
+0[%
+0Z%
+0Y%
+0X%
+0W%
+b0 V%
+0U%
+0T%
+0S%
+0R%
+1Q%
+b0z P%
+0O%
+b0 N%
+b0 M%
+0L%
+0K%
+zJ%
+0I%
+1H%
+0G%
+0F%
+b0z E%
+0D%
+0C%
+0B%
+0A%
+z@%
+0?%
+1>%
+0=%
+0<%
+b0z ;%
+0:%
+09%
+08%
+07%
+z6%
+05%
+14%
+03%
+02%
+b0z 1%
+00%
+0/%
+0.%
+0-%
+z,%
+0+%
+1*%
+0)%
+0(%
+b0z '%
+0&%
+0%%
+0$%
+0#%
+0"%
+0!%
+0~$
+0}$
+0|$
+0{$
+0z$
+0y$
+0x$
+0w$
+0v$
+0u$
+0t$
+b0 s$
+0r$
+0q$
+0p$
+0o$
+1n$
+b0z m$
+b0 l$
+b0 k$
+0j$
+0i$
+0h$
+0g$
+0f$
+0e$
+0d$
+0c$
+0b$
+0a$
+0`$
+b0 _$
+b1111 ^$
+b0z ]$
+0\$
+0[$
+0Z$
+b0 Y$
+b0 X$
+0W$
+0V$
+zU$
+0T$
+1S$
+0R$
+0Q$
+b0z P$
+0O$
+0N$
+0M$
+0L$
+zK$
+0J$
+1I$
+0H$
+0G$
+b0z F$
+0E$
+0D$
+0C$
+0B$
+zA$
+0@$
+1?$
+0>$
+0=$
+b0z <$
+0;$
+0:$
+09$
+08$
+z7$
+06$
+15$
+04$
+03$
+b0z 2$
+01$
+00$
+0/$
+0.$
+0-$
+0,$
+0+$
+0*$
+0)$
+0($
+0'$
+0&$
+0%$
+0$$
+0#$
+0"$
+0!$
+b0 ~#
+0}#
+0|#
+0{#
+0z#
+1y#
+b0z x#
+0w#
+b0 v#
+b0 u#
+0t#
+0s#
+zr#
+0q#
+1p#
+0o#
+0n#
+b0z m#
+0l#
+0k#
+0j#
+0i#
+zh#
+0g#
+1f#
+0e#
+0d#
+b0z c#
+0b#
+0a#
+0`#
+0_#
+z^#
+0]#
+1\#
+0[#
+0Z#
+b0z Y#
+0X#
+0W#
+0V#
+0U#
+zT#
+0S#
+1R#
+0Q#
+0P#
+b0z O#
+0N#
+0M#
+0L#
+0K#
+0J#
+0I#
+0H#
+0G#
+0F#
+0E#
+0D#
+0C#
+0B#
+0A#
+0@#
+0?#
+0>#
+b0 =#
+0<#
+0;#
+0:#
+09#
+18#
+b0z 7#
+06#
+b0 5#
+b0 4#
+03#
+02#
+z1#
+00#
+1/#
+0.#
+0-#
+b0z ,#
+0+#
+0*#
+0)#
+0(#
+z'#
+0&#
+1%#
+0$#
+0##
+b0z "#
+0!#
+0~"
+0}"
+0|"
+z{"
+0z"
+1y"
+0x"
+0w"
+b0z v"
+0u"
+0t"
+0s"
+0r"
+zq"
+0p"
+1o"
+0n"
+0m"
+b0z l"
+0k"
+0j"
+0i"
+0h"
+0g"
+0f"
+0e"
+0d"
+0c"
+0b"
+0a"
+0`"
+0_"
+0^"
+0]"
+0\"
+0["
+b0 Z"
+0Y"
+0X"
+0W"
+0V"
+1U"
+b0z T"
+0S"
+b0 R"
+b0 Q"
+0P"
+0O"
+zN"
+0M"
+1L"
+0K"
+0J"
+b0z I"
+0H"
+0G"
+0F"
+0E"
+zD"
+0C"
+1B"
+0A"
+x@"
+b0z ?"
+0>"
+0="
+0<"
+0;"
+z:"
+09"
+x8"
+x7"
+x6"
+b0z 5"
+04"
+x3"
+02"
+01"
+z0"
+0/"
+x."
+x-"
+x,"
+b0z +"
+x*"
+z)"
+x("
+x'"
+0&"
+x%"
+x$"
+0#"
+0""
+x!"
+0~
+0}
+0|
+x{
+xz
+0y
+0x
+b0xxx w
+xv
+xu
+xt
+0s
+xr
+b0z q
+b0xx p
+b0z o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+b0xxx c
+b111x b
+b0z a
+0`
+0_
+0^
+b0xx ]
+b0z \
+0[
+b0xxx Z
+0Y
+xX
+1W
+0V
+0U
+b0z T
+0S
+b0xx R
+b0z Q
+bx P
+bx O
+bx N
+bx M
+bx L
+b0xx K
+0J
+b0xxx I
+0H
+xG
+bx F
+b0xx E
+b0xxx D
+bz C
+bx B
+bx A
+b0x @
+b0xx ?
+b0xxxx >
+x=
+b0 <
+bx ;
+b0x :
+bx 9
+bx 8
+bx 7
+x6
+bx 5
+bx 4
+bx 3
+bx 2
+b1 1
+00
+bx /
+x.
+b0xxx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bz &
+bx %
+bz $
+x#
+bz "
+bz !
 $end
+#10
+b0 K/
+b10 I/
+b1x ~.
+b1z &/
+b0 !/
+b10 }.
+b1001 "/
+b1000 $/
+b10 #/
+b100100000x00000 %/
+b11 \(
+b0 Y(
+b1000 X(
+0C/
+b0 @/
+0;/
+0`.
+0I(
+#20
+b1000 H/
+b1000 L/
+0M/
+1N/
+1C/
+b1 @/
+1;/
+1`.
+1I(
+b1000 B/
+b1 E/
+#30
+b1000 I/
+0C/
+b0 @/
+0;/
+0`.
+0I(
 #40
+1C/
+b1 @/
+1;/
+1`.
+1I(

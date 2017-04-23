@@ -37,5 +37,5 @@ module CPU_tb();
 		#10 Clk = ~Clk;
 	end
 
-	CPU myCPU(Clk, OutPC, Instr, Data, RegWrite, Funct, Rs, Rt, Rd, EXControl1, MEMControl1, WBControl1, MEMControl2, WBControl2, WriteAddr, ALUResult, ALUData, WBControl3, MEMAddress, MEMData, PCSrc, Jump, BranchPC, JumpPC, DataA, DataB, SE);
+	CPU test(Clk, OutPC, Instr, Data, RegWrite, Funct, Rs, Rt, Rd, EXControl1, MEMControl1, WBControl1, MEMControl2, WBControl2, WriteAddr, ALUResult, ALUData, WBControl3, MEMAddress, MEMData, PCSrc, Jump, BranchPC, JumpPC, DataA, DataB, SE);
 endmodule
